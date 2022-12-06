@@ -1,17 +1,11 @@
 import { Layout } from './Layout'
 import { Grid, Thumbnail } from './Grid'
 
-export const CodingContent = () => {
+export const VRARContent = () => {
   return (
     <Layout>
       <Grid>
         <>
-        <Thumbnail/>
-        <Thumbnail/>
-        <Thumbnail/>
-        <Thumbnail/>
-        <Thumbnail/>
-        <Thumbnail/>
         <Thumbnail/>
         <Thumbnail/>
         <Thumbnail/>
