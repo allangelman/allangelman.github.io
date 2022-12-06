@@ -1,6 +1,4 @@
 import { ReactElement } from "react"
-import {Header} from "./Header"
-import {Footer} from "./Footer"
 
 interface GridProps {
   children: ReactElement

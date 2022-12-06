@@ -1,4 +1,3 @@
-import { ReactElement } from "react"
 import Link from "next/link"
 
 export const Header = () => {
@@ -10,7 +9,7 @@ export const Header = () => {
         <HeaderCategory name={"coding"} href={"Coding"}/>
         <HeaderCategory name={"3d_art"} href={"3DArt"} />
         <HeaderCategory name={"immersive"} href={"VRAR"}/>
-        <HeaderCategory name={"2d_art"}/>
+        <HeaderCategory name={"2d_art"} href={"Painting"}/>
         <HeaderCategory name={"about"}/>
       </div>
     </div>
