@@ -35,12 +35,12 @@ export const PaintingContent = () => {
   );
 };
 
-interface PaintingProps {
+interface PainttingProps {
   src: string;
   alt: string;
 }
 
-export const Painting = ({ src, alt }: PaintingProps) => {
+export const Painting = ({ src, alt }: PainttingProps) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
