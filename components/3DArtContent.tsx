@@ -10,8 +10,9 @@ export const ThreeDContent = () => {
       <Grid>
         <>
           <ThreeDArtThumbnail
-            src={"/threeDArt/houseofachild/final.png"}
+            src={"/threeDArt/houseofachild/sidebyside.png"}
             alt={"houseofachild"}
+            href={"3DArt/HouseOfAChild"}
           />
           <ThreeDArtPinkThumbnail />
           <ThreeDArtPinkThumbnail />
@@ -35,11 +36,6 @@ export const ThreeDArtPinkThumbnail = () => {
   );
 };
 
-interface ThreeDArtThumbnailProps {
-  src: string;
-  alt: string;
-}
-
 interface imageLoaderProps {
   src: string;
   width: number;
@@ -50,36 +46,48 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
   return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
 };
 
-export const ThreeDArtThumbnail = ({ src, alt }: ThreeDArtThumbnailProps) => {
+interface ThreeDArtThumbnailProps {
+  src: string;
+  alt: string;
+  href: string;
+}
+
+export const ThreeDArtThumbnail = ({
+  src,
+  alt,
+  href,
+}: ThreeDArtThumbnailProps) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
-    <div className="aspect-5/3 relative">
-      <div
-        className={cn("w-full h-full absolute object-cover", {
-          "opacity-100 transition duration-3000": imageIsLoaded,
-          "opacity-0": !imageIsLoaded,
-        })}
-        style={{
-          borderRadius: "8px",
-          overflow: "hidden",
-          transition: "0.3s",
-        }}
-      >
-        <Image
-          src={src}
-          loader={myLoader}
-          alt={alt}
-          width={400}
-          height={500}
-          onLoad={() => {
-            setImageIsLoaded(true);
+    <a href={href}>
+      <div className="aspect-5/3 relative">
+        <div
+          className={cn("w-full h-full absolute", {
+            "opacity-100 transition duration-3000": imageIsLoaded,
+            "opacity-0": !imageIsLoaded,
+          })}
+          style={{
+            borderRadius: "8px",
+            overflow: "hidden",
+            transition: "0.3s",
           }}
-        />
+        >
+          <Image
+            src={src}
+            loader={myLoader}
+            alt={alt}
+            width={400}
+            height={500}
+            onLoad={() => {
+              setImageIsLoaded(true);
+            }}
+          />
+        </div>
+        <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl text-transparent hover:text-black hover:bg-white/30">
+          Backyard of a Child
+        </div>
       </div>
-      <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl text-transparent hover:text-black hover:bg-white/30">
-        Backyard of a Child
-      </div>
-    </div>
+    </a>
   );
 };
