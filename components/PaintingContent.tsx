@@ -36,17 +36,8 @@ export const PaintingContent = () => {
           <div className="mt-4">
             <Image src="/paintings/sun.png" loader={myLoader} alt="max" width={600} height={500} />
           </div>
-          <div className="flex space-x-4">
-            <div className="w-1/2">
-              <div className="mt-4">
-                <Image src="/paintings/kala.jpg" loader={myLoader} alt="max" width={600} height={500} />
-              </div>
-            </div>
-            <div className="w-1/2">
-              <div className="mt-4">
-                <Image src="/paintings/max.JPG" loader={myLoader} alt="max" width={600} height={500} />
-              </div>
-            </div>
+          <div className="mt-4">
+            <Image src="/paintings/kalamax.png" loader={myLoader} alt="kalamax" width={600} height={500} />
           </div>
         </div>
         {/* <div className="w-1/3">
