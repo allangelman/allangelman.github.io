@@ -1,12 +1,5 @@
-import { PaintingContent } from '../components/PaintingContent'
+import { PaintingContent } from "../components/PaintingContent";
 
 export default function ThreeDArt() {
-  return (
-    <PaintingContent/>
-  )
+  return <PaintingContent />;
 }
-
-
-
-
-

@@ -1,25 +1,15 @@
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 
 interface GridProps {
-  children: ReactElement
+  children: ReactElement;
 }
-export const Grid = ({children}: GridProps) => {
+export const Grid = ({ children }: GridProps) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-      {children}
-    </div>
-  )
-}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">{children}</div>
+  );
+};
 
-interface ThumbnailProps {
-}
+interface ThumbnailProps {}
 export const Thumbnail = ({}: ThumbnailProps) => {
-  return (
-    <div className="aspect-5/3 rounded-md bg-pink-500"/>
-  )
-}
-
-
-
-
-
+  return <div className="aspect-5/3 rounded-md bg-pink-500" />;
+};

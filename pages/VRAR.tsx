@@ -1,14 +1,5 @@
-import { VRARContent } from '../components/VRARContent'
+import { VRARContent } from "../components/VRARContent";
 
-
-export default function VRAR () {
-  return (
-    <VRARContent/>
-  )
+export default function VRAR() {
+  return <VRARContent />;
 }
-
-
-
-
-
-

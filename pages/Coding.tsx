@@ -1,14 +1,5 @@
-import { CodingContent } from '../components/CodingContent'
+import { CodingContent } from "../components/CodingContent";
 
-
-export default function Coding () {
-  return (
-    <CodingContent/>
-  )
+export default function Coding() {
+  return <CodingContent />;
 }
-
-
-
-
-
-

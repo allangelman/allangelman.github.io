@@ -1,7 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { CodingContent } from '../components/CodingContent'
-import Coding from './Coding'
+import Head from "next/head";
+import { CodingContent } from "../components/CodingContent";
 
 export default function Home() {
   return (
@@ -13,9 +11,5 @@ export default function Home() {
       </Head>
       <CodingContent />
     </>
-  )
+  );
 }
-
-
-
-
