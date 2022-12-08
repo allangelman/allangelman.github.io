@@ -77,8 +77,8 @@ export const ThreeDArtThumbnail = ({
             src={src}
             loader={myLoader}
             alt={alt}
-            width={400}
-            height={500}
+            layout="fill"
+            objectFit="cover"
             onLoad={() => {
               setImageIsLoaded(true);
             }}
