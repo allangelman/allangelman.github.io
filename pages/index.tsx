@@ -13,3 +13,14 @@ export default function Home() {
     </>
   );
 }
+
+//todo
+//update 3d art content page to have small thumbnails
+//update painting section to have small version of pictures
+// add demo reel to 3d art content page
+//make radix slider
+//make radix full screen image viewer
+//about page animation make it landing page?
+//font
+//vercel and store images in s3 and cloudfron?
+// or vercel and store images in google soltuion to make a project saying i wanted to learn google products?
