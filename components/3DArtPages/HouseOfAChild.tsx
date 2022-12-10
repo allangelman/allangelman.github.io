@@ -26,7 +26,7 @@ export const HouseOfAChild = () => {
                 />
               </div>
               <div
-                className="w-full h-full absolute"
+                className="w-full h-full  absolute"
                 style={{ opacity: `${sliderValue}%` }}
               >
                 <Image
