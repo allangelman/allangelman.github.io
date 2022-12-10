@@ -30,7 +30,7 @@ export const HouseOfAChild = () => {
                 style={{ opacity: `${sliderValue}%` }}
               >
                 <Image
-                  src="/threeDArt/houseofachild/wireframe.png"
+                  src="/threeDArt/houseofachild/wireframe1.png"
                   alt="final"
                   width={850}
                   height={450}
