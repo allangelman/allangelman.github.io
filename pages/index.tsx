@@ -15,6 +15,9 @@ export default function Home() {
 }
 
 //todo
+// make images on house of child have loader
+//maybe make a loading skeleton?
+// make genaric image component
 //update 3d art content page to have small thumbnails
 //update painting section to have small version of pictures
 // add demo reel to 3d art content page
@@ -24,3 +27,6 @@ export default function Home() {
 //font
 //vercel and store images in s3 and cloudfron?
 // or vercel and store images in google soltuion to make a project saying i wanted to learn google products?
+//no text cursor
+//favicon
+//add link to name so it links back to index
