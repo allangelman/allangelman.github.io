@@ -6,30 +6,61 @@ import Image from "next/image";
 
 export const ThreeDContent = () => {
   return (
-    <Layout>
-      <Grid>
-        <>
-          <ThreeDArtThumbnail
-            src={"/threeDArt/houseofachild/sidebyside.png"}
-            alt={"houseofachild"}
-            href={"3DArt/HouseOfAChild"}
-            name={"House of a Child"}
-          />
-          <ThreeDArtThumbnail
-            src={"/threeDArt/antiqueshop/TheAntiqueShopThumbnail.png"}
-            alt={"antiqueshop"}
-            href={"3DArt/AntiqueShop"}
-            name={"The Antique Shop"}
-          />
-          <ThreeDArtPinkThumbnail />
-          <ThreeDArtPinkThumbnail />
-          <ThreeDArtPinkThumbnail />
-          <ThreeDArtPinkThumbnail />
-          <ThreeDArtPinkThumbnail />
-          <ThreeDArtPinkThumbnail />
-        </>
-      </Grid>
-    </Layout>
+    <>
+      <Layout>
+        <div className="space-y-4">
+          <div
+            className="w-full h-full"
+            style={{
+              padding: "56.25% 0 0 0",
+              position: "relative",
+              overflow: "hidden",
+            }}
+          >
+            <iframe
+              src="https://player.vimeo.com/video/534692300?h=2efc068be3&color=ff0179"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+              }}
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <Grid>
+            <>
+              <ThreeDArtThumbnail
+                src={"/threeDArt/houseofachild/sidebyside.png"}
+                alt={"houseofachild"}
+                href={"3DArt/HouseOfAChild"}
+                name={"House of a Child"}
+              />
+              <ThreeDArtThumbnail
+                src={"/threeDArt/antiqueshop/TheAntiqueShopThumbnail.png"}
+                alt={"antiqueshop"}
+                href={"3DArt/AntiqueShop"}
+                name={"The Antique Shop"}
+              />
+              <ThreeDArtThumbnail
+                src={"/threeDArt/sewingmachine/sewingmachinethumb.png"}
+                alt={"sewingmachine"}
+                href={"3DArt/SewingMachine"}
+                name={"Vintage Sewing Machine"}
+              />
+              <ThreeDArtPinkThumbnail />
+              <ThreeDArtPinkThumbnail />
+              <ThreeDArtPinkThumbnail />
+              <ThreeDArtPinkThumbnail />
+              <ThreeDArtPinkThumbnail />
+            </>
+          </Grid>
+        </div>
+      </Layout>
+    </>
   );
 };
 
@@ -92,7 +123,7 @@ export const ThreeDArtThumbnail = ({
             }}
           />
         </div>
-        <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl text-transparent hover:text-black hover:bg-white/30">
+        <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl text-transparent hover:text-black hover:bg-white/70">
           {name}
         </div>
       </div>
