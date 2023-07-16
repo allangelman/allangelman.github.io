@@ -30,6 +30,12 @@ export const PaintingContent = () => {
           <Painting src={"/paintings/L.png"} alt={"L"} />
           <Painting src={"/paintings/Pavement.jpg"} alt={"pavement"} />
         </div>
+        <div>
+          <Painting src={"/paintings/inej.png"} alt={"inej"} />
+          <Painting src={"/paintings/jesper.png"} alt={"jesper"} />
+          <Painting src={"/paintings/claudia.png"} alt={"claudia"} />
+          <Painting src={"/paintings/push.jpg"} alt={"push"} />
+        </div>
       </div>
     </Layout>
   );
