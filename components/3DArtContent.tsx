@@ -51,11 +51,6 @@ export const ThreeDContent = () => {
                 href={"3DArt/SewingMachine"}
                 name={"Vintage Sewing Machine"}
               />
-              <ThreeDArtPinkThumbnail />
-              <ThreeDArtPinkThumbnail />
-              <ThreeDArtPinkThumbnail />
-              <ThreeDArtPinkThumbnail />
-              <ThreeDArtPinkThumbnail />
             </>
           </Grid>
         </div>
