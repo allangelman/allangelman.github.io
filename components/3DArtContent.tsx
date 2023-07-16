@@ -13,8 +13,14 @@ export const ThreeDContent = () => {
             src={"/threeDArt/houseofachild/sidebyside.png"}
             alt={"houseofachild"}
             href={"3DArt/HouseOfAChild"}
+            name={"House of a Child"}
           />
-          <ThreeDArtPinkThumbnail />
+          <ThreeDArtThumbnail
+            src={"/threeDArt/antiqueshop/TheAntiqueShopThumbnail.png"}
+            alt={"antiqueshop"}
+            href={"3DArt/AntiqueShop"}
+            name={"The Antique Shop"}
+          />
           <ThreeDArtPinkThumbnail />
           <ThreeDArtPinkThumbnail />
           <ThreeDArtPinkThumbnail />
@@ -50,12 +56,14 @@ interface ThreeDArtThumbnailProps {
   src: string;
   alt: string;
   href: string;
+  name: string;
 }
 
 export const ThreeDArtThumbnail = ({
   src,
   alt,
   href,
+  name,
 }: ThreeDArtThumbnailProps) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
@@ -85,7 +93,7 @@ export const ThreeDArtThumbnail = ({
           />
         </div>
         <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl text-transparent hover:text-black hover:bg-white/30">
-          Backyard of a Child
+          {name}
         </div>
       </div>
     </a>
