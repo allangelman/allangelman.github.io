@@ -134,7 +134,7 @@ export const AntiqueShop = () => {
               {`Here is a gif compilation of my test renders while I was working on this project!`}
             </span>
             <img
-              src="/threeDArt/houseofachild/1_8.gif"
+              src="/threeDArt/antiqueshop/1_8.gif"
               alt="final"
               width={650}
               height={450}
