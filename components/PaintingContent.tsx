@@ -19,24 +19,30 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
 export const PaintingContent = () => {
   return (
     <Layout>
-      <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
-        <div>
-          <Painting src={"/paintings/kaz.png"} alt={"max"} />
-          <Painting src={"/paintings/inej.png"} alt={"inej"} />
-          <Painting src={"/paintings/jesper.png"} alt={"jesper"} />
-          <Painting src={"/paintings/bentaylor.png"} alt={"bentaylor"} />
-          <Painting src={"/paintings/natasha.png"} alt={"natasha"} />
-          <Painting src={"/paintings/kalamax.png"} alt={"kalamax"} />
+      <>
+        <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
+          <div>
+            <Painting src={"/paintings/kaz.png"} alt={"max"} />
+            <Painting src={"/paintings/inej.png"} alt={"inej"} />
+            <Painting src={"/paintings/jesper.png"} alt={"jesper"} />
+            <Painting src={"/paintings/claudia.png"} alt={"claudia"} />
+            <Painting src={"/paintings/push.png"} alt={"push"} />
+            <Painting src={"/paintings/meilin.png"} alt={"meilin"} />
+            <Painting src={"/paintings/sun.png"} alt={"sun"} />
+          </div>
         </div>
-        <div>
-          <Painting src={"/paintings/claudia.png"} alt={"claudia"} />
-          <Painting src={"/paintings/push.png"} alt={"push"} />
-          <Painting src={"/paintings/meilin.png"} alt={"meilin"} />
-          <Painting src={"/paintings/sun.png"} alt={"sun"} />
-          <Painting src={"/paintings/L.png"} alt={"L"} />
-          <Painting src={"/paintings/Pavement.jpg"} alt={"pavement"} />
+        <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
+          <div>
+            <Painting src={"/paintings/bentaylor.png"} alt={"bentaylor"} />
+            <Painting src={"/paintings/natasha.png"} alt={"natasha"} />
+            <Painting src={"/paintings/kalamax.png"} alt={"kalamax"} />
+          </div>
+          <div>
+            <Painting src={"/paintings/L.png"} alt={"L"} />
+            <Painting src={"/paintings/Pavement.jpg"} alt={"pavement"} />
+          </div>
         </div>
-      </div>
+      </>
     </Layout>
   );
 };
@@ -53,7 +59,7 @@ export const Painting = ({ src, alt }: PainttingProps) => {
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <div
-          className={cn("mt-4", {
+          className={cn("mt-4 hover:scale-[1.01] transition duration-300", {
             "opacity-100 transition duration-3000": imageIsLoaded,
             "opacity-0": !imageIsLoaded,
           })}
@@ -64,7 +70,7 @@ export const Painting = ({ src, alt }: PainttingProps) => {
           }}
         >
           <div
-            className="hover-zoom"
+            className=""
             style={{
               transformOrigin: "center",
             }}
@@ -73,22 +79,13 @@ export const Painting = ({ src, alt }: PainttingProps) => {
               src={src}
               loader={myLoader}
               alt={alt}
-              width={600}
+              width={1200}
               height={500}
               onLoad={() => {
                 setImageIsLoaded(true);
               }}
             />
           </div>
-
-          <style jsx>{`
-            .hover-zoom {
-              transition: transform 0.3s;
-            }
-            .hover-zoom:hover {
-              transform: scale(1.05);
-            }
-          `}</style>
         </div>
       </Dialog.Trigger>
       <Dialog.Portal>
