@@ -19,7 +19,7 @@ export const CodingContent = () => {
           <CodingContentThumbnail
             src={"/coding/raytracer/raytracerthumbnail.png"}
             alt={"raytracer"}
-            href={"3DArt/AntiqueShop"}
+            href={"Coding/RayTracer"}
             name={"Ray Tracer with OBJ Loading"}
             tools={"C++"}
           />
