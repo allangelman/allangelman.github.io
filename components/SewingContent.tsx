@@ -20,22 +20,22 @@ export const SewingContent = () => {
   return (
     <Layout>
       <>
-        {/* <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
+        <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
           <div>
-            <Painting src={"/sewing/full.png"} alt={"max"} />
-            <Painting src={"/sewing/detail.png"} alt={"inej"} />
+            <Painting src={"/sewing/full.jpg"} alt={"max"} />
+            <Painting src={"/sewing/detail.jpg"} alt={"inej"} />
             <Painting src={"/sewing/google.png"} alt={"jesper"} />
-          </div>
-        </div> */}
-        <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
-          <div>
-            <Painting src={"/sewing/detail.png"} alt={"inej"} />
-            <Painting src={"/sewing/google.png"} alt={"jesper"} />
-          </div>
-          <div>
-            <Painting src={"/sewing/full.png"} alt={"max"} />
           </div>
         </div>
+        {/* <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
+          <div>
+            <Painting src={"/sewing/detail.jpg"} alt={"inej"} />
+            <Painting src={"/sewing/google.png"} alt={"jesper"} />
+          </div>
+          <div>
+            <Painting src={"/sewing/full.jpg"} alt={"max"} />
+          </div>
+        </div> */}
       </>
     </Layout>
   );
