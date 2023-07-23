@@ -51,6 +51,12 @@ export const ThreeDContent = () => {
                 href={"3DArt/SewingMachine"}
                 name={"Vintage Sewing Machine"}
               />
+              <ThreeDArtThumbnail
+                src={"/threeDArt/hope/thumbnail.png"}
+                alt={"hope"}
+                href={"3DArt/Hope"}
+                name={"Hope"}
+              />
             </>
           </Grid>
         </div>
