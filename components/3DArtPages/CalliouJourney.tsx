@@ -94,7 +94,7 @@ export const CalliouJourney = () => {
               {`Here is a gif compilation of my test renders while I was working on this project!`}
             </span>
             <img
-              src="/threeDArt/hope/1_6.gif"
+              src="/threeDArt/callioujourney/1_6.gif"
               alt="final"
               width={650}
               height={450}
