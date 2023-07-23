@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Layout } from "../Layout";
 import { ImageSlider } from "../ImageSlider";
+import { Vimeo } from "../Vimeo";
 
 export const AntiqueShop = () => {
   return (
@@ -40,52 +41,8 @@ export const AntiqueShop = () => {
               objectFit="cover"
               loader={myLoader}
             />
-            <div
-              className="w-full h-full"
-              style={{
-                padding: "56.25% 0 0 0",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              <iframe
-                src="https://player.vimeo.com/video/492851519?h=2efc068be3&color=ff0179"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-
-            <div
-              className="w-full h-full"
-              style={{
-                padding: "56.25% 0 0 0",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              <iframe
-                src="https://player.vimeo.com/video/492857587?h=2efc068be3&color=ff0179"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-
+            <Vimeo videoID={"492851519"} />
+            <Vimeo videoID={"492857587"} />
             <span>
               {`Here is a gif compilation of my test renders while I was working on this project!`}
             </span>

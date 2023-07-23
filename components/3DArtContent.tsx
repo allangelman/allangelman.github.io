@@ -3,34 +3,14 @@ import { Grid } from "./Grid";
 import { useState } from "react";
 import cn from "classnames";
 import Image from "next/image";
+import { Vimeo } from "./Vimeo";
 
 export const ThreeDContent = () => {
   return (
     <>
       <Layout>
         <div className="space-y-4">
-          <div
-            className="w-full h-full"
-            style={{
-              padding: "56.25% 0 0 0",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <iframe
-              src="https://player.vimeo.com/video/534692300?h=2efc068be3&color=ff0179"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-              }}
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <Vimeo videoID={"534692300"} />
           <Grid>
             <>
               <ThreeDArtThumbnail

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Image from "next/image";
 import { Layout } from "../Layout";
+import { Vimeo } from "../Vimeo";
 
 export const FairyHouse = () => {
   return (
@@ -31,29 +32,7 @@ export const FairyHouse = () => {
             <span>
               {`Modeled in Maya. Foliage in Paint Effects. Cloth using nCloth. Clouds using Paint Fluids Tool. Rendering with Arnold.`}
             </span>
-            <div
-              className="w-full h-full"
-              style={{
-                padding: "56.25% 0 0 0",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              <iframe
-                src="https://player.vimeo.com/video/503873374?h=2efc068be3&color=ff0179"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-
+            <Vimeo videoID={"503873374"} />
             <span>
               {`Here is a gif compilation of my test renders while I was working on this project!`}
             </span>

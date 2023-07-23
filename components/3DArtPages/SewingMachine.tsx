@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Layout } from "../Layout";
 import { useState } from "react";
+import { Vimeo } from "../Vimeo";
 
 export const SewingMachine = () => {
   const [sliderValue, setSliderValue] = useState<number>(0);
@@ -11,34 +12,12 @@ export const SewingMachine = () => {
       <Layout>
         <>
           <div className="lg:mx-auto lg:max-w-[850px] flex flex-col items-center space-y-8">
-            <div
-              className="w-full h-full"
-              style={{
-                padding: "56.25% 0 0 0",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              <iframe
-                src="https://player.vimeo.com/video/460981218?h=2efc068be3&color=ff0179"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <Vimeo videoID={"460981218"} />
             <div className="space-y-4">
               <p>
                 {`Modeled in Maya and Zbrush for creating displacement maps. Textured in Substance Painter and Photoshop.
               Procedurally shaded, lit, and rendered in Arnold.`}
               </p>
-
               <p>
                 {`Modeled in Maya and Zbrush for creating displacement maps. Textured in Substance Painter and Photoshop.
               Procedurally shaded, lit, and rendered in Arnold.`}

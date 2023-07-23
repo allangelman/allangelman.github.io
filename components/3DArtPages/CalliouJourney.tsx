@@ -1,12 +1,9 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Layout } from "../Layout";
-import { useState } from "react";
 import { ImageSlider } from "../ImageSlider";
+import { Vimeo } from "../Vimeo";
 
 export const CalliouJourney = () => {
-  const [sliderValue, setSliderValue] = useState<number>(0);
-  console.log(sliderValue);
-  console.log(sliderValue);
   return (
     <>
       <Layout>
@@ -24,28 +21,7 @@ export const CalliouJourney = () => {
             <span>
               {`Modeled in Maya. Textured in Substance Painter. Hair/Fur in XGen. Lit and rendered in Arnold.`}
             </span>
-            <div
-              className="w-full h-full"
-              style={{
-                padding: "56.25% 0 0 0",
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              <iframe
-                src="https://player.vimeo.com/video/534557526?h=2efc068be3&color=ff0179"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <Vimeo videoID={"534557526"} />
             <span>
               {`Here is a gif compilation of my test renders while I was working on this project!`}
             </span>
@@ -60,14 +36,4 @@ export const CalliouJourney = () => {
       </Layout>
     </>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
 };
