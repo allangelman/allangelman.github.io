@@ -36,8 +36,7 @@ export const AboutContent = () => {
               <h1 className="text-4xl font-bold">Hi there!</h1>
               <p>
                 My name is Allan Gelman. I am an software engineer and artist
-                with passions for passions for web development, AR/VR, and 3D
-                modeling.
+                with passions for web development, AR/VR, and 3D modeling.
               </p>
               <p>
                 I graduated from MIT in 2020, where I completed an
