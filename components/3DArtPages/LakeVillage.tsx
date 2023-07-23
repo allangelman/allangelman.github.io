@@ -14,7 +14,7 @@ export const LakeVillage = () => {
             <ImageSlider
               firstImagePath="/threeDArt/lakevillage/ao.jpg"
               secondImagePath="/threeDArt/lakevillage/wire.png"
-              ratio="16/9"
+              ratio="aspect-16/9"
             />
             <span>
               {`I wanted to model a city environment, so I was very excited when I

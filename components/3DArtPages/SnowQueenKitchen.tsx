@@ -13,7 +13,7 @@ export const SnowQueenKitchen = () => {
             <ImageSlider
               firstImagePath="/threeDArt/snowqueenkitchen/ao.png"
               secondImagePath="/threeDArt/snowqueenkitchen/wire.png"
-              ratio="16/9"
+              ratio="aspect-16/9"
             />
             <span>
               {`One of my favorite 3D animated movies is Frozen,

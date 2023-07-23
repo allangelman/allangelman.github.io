@@ -12,7 +12,7 @@ export const CalliouJourney = () => {
             <ImageSlider
               firstImagePath="/threeDArt/callioujourney/callioujourney.png"
               secondImagePath="/threeDArt/callioujourney/callioujourney_ao.png"
-              ratio="16/9"
+              ratio="aspect-16/9"
             />
             <span>
               {`This piece is based on a beautiful concept art made by Suheb Zako. I loved the dramatic feeling of the concept,

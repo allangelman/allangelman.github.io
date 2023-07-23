@@ -20,7 +20,7 @@ export const SewingContent = () => {
   return (
     <Layout>
       <>
-        <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
+        <div className="grid gap-4 grid-col-1 sm:grid-cols-1 mx-20">
           <div>
             <Sewing
               src={"/sewing/google.png"}

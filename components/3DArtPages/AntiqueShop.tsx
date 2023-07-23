@@ -13,7 +13,7 @@ export const AntiqueShop = () => {
             <ImageSlider
               firstImagePath="/threeDArt/antiqueshop/TheAntiqueShop.png"
               secondImagePath="/threeDArt/antiqueshop/AOwithwire.png"
-              ratio="16/9"
+              ratio="aspect-16/9"
             />
             <span>
               {`After taking the CGMA course Procedural Modeling for Production in Houdini,

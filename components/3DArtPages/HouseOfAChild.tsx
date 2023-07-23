@@ -13,7 +13,7 @@ export const HouseOfAChild = () => {
             <ImageSlider
               firstImagePath="/threeDArt/houseofachild/final.png"
               secondImagePath="/threeDArt/houseofachild/wireframe1.png"
-              ratio="16/9"
+              ratio="aspect-16/9"
             />
             <span>
               {`I modeled the central house of this scene for my Production Modeling

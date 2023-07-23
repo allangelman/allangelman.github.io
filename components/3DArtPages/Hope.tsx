@@ -12,7 +12,7 @@ export const Hope = () => {
             <ImageSlider
               firstImagePath="/threeDArt/hope/hope_shaded.png"
               secondImagePath="/threeDArt/hope/hope_ao.png"
-              ratio="12/5"
+              ratio="aspect-12/5"
             />
             <span>
               {`As soon as I found Rayner Alencar's concept art, I knew I wanted to recreate it in 3D.

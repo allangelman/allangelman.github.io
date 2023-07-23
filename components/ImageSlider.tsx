@@ -17,14 +17,14 @@ export const ImageSlider = ({
   const [sliderValue, setSliderValue] = useState<number>(0);
   return (
     <>
-      <div className={cn(`aspect-[${ratio}] group relative w-full h-full`)}>
+      <div className={cn(`group relative w-full h-full`, ratio)}>
         <div className="w-full h-full absolute">
           <Image
             src={firstImagePath}
             alt="final"
             width={850}
             height={450}
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             loader={myLoader}
           />
         </div>
@@ -37,7 +37,7 @@ export const ImageSlider = ({
             alt="final"
             width={850}
             height={450}
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             loader={myLoader}
           />
         </div>

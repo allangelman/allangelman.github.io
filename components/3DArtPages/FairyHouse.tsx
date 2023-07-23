@@ -12,6 +12,7 @@ export const FairyHouse = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Image
                 src="/threeDArt/fairyhouse/ao.png"
+                priority
                 alt="final"
                 width={500}
                 height={450}
