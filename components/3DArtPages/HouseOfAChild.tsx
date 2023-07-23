@@ -61,7 +61,6 @@ export const HouseOfAChild = () => {
                 />
               </Slider.Root>
             </div>
-
             <span>
               {`I modeled the central house of this scene for my Production Modeling
           course from CGMA (Computer Graphics Master Academy), taught by Vidya
@@ -69,7 +68,10 @@ export const HouseOfAChild = () => {
           art when I stumbled upon it, because I envisioned my childhood-self
           trying to build it. That, along with my nostalgia for Boston's often
           foggy sky, is what inspired the creation of this scene! Concept art by
-          Lena Kroshilina. Modeled in Maya. Foliage in PaintEffects and MASH.
+          Lena Kroshilina.`}
+            </span>
+            <span>
+              {`Modeled in Maya. Foliage in PaintEffects and MASH.
           Fog using Maya Fluid's FX. Textured in Substance Painter. Procedural
           shading, lighting, and rendering with Arnold.`}
             </span>

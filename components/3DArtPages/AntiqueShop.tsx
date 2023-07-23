@@ -60,11 +60,13 @@ export const AntiqueShop = () => {
                 />
               </Slider.Root>
             </div>
-
             <span>
               {`After taking the CGMA course Procedural Modeling for Production in Houdini,
               taught by Sean McEwan, I created my own procedural Houdini tool to create straw lampshades.
-              I then created this fun personal project of an Antique Shop to give my lamps a home!
+              I then created this fun personal project of an Antique Shop to give my lamps a home!`}
+            </span>
+            <span>
+              {`
               Modeled in Maya and Houdini. Cloth in nCloth. Textured with Substance Painter and Photoshop.
               Procedural shading, lighting, and rendering done with Arnold.`}
             </span>

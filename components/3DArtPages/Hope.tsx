@@ -14,7 +14,7 @@ export const Hope = () => {
       <Layout>
         <>
           <div className="lg:mx-auto lg:max-w-[850px] flex flex-col items-center space-y-8">
-            <div className="aspect-16/9 group relative w-full h-full">
+            <div className="aspect-[12/5] group relative w-full h-full">
               <div className="w-full h-full absolute">
                 <Image
                   src="/threeDArt/hope/hope_shaded.png"
@@ -61,12 +61,14 @@ export const Hope = () => {
                 />
               </Slider.Root>
             </div>
-
             <span>
               {`As soon as I found Rayner Alencar's concept art, I knew I wanted to recreate it in 3D.
               I loved the magical fish in the backpack, and was drawn to this character's story.
               I had so much fun modeling/texturing this piece and matching the beautiful lighting of
-              the concept. Modeled in Maya. Textured in Substance Painter. XGen for Hair. Rendered and lit with Arnold.`}
+              the concept.`}
+            </span>
+            <span>
+              {`Modeled in Maya. Textured in Substance Painter. XGen for Hair. Rendered and lit with Arnold.`}
             </span>
             <div
               className="w-full h-full"
