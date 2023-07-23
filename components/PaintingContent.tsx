@@ -25,10 +25,10 @@ export const PaintingContent = () => {
             <Painting src={"/paintings/kaz.png"} alt={"max"} />
             <Painting src={"/paintings/inej.png"} alt={"inej"} />
             <Painting src={"/paintings/jesper.png"} alt={"jesper"} />
+            <Painting src={"/paintings/sun.png"} alt={"sun"} />
             <Painting src={"/paintings/claudia.png"} alt={"claudia"} />
             <Painting src={"/paintings/push.png"} alt={"push"} />
             <Painting src={"/paintings/meilin.png"} alt={"meilin"} />
-            <Painting src={"/paintings/sun.png"} alt={"sun"} />
           </div>
         </div>
         <div className="grid gap-4 grid-col-1 sm:grid-cols-2">

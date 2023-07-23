@@ -17,7 +17,7 @@ export const LakeVillage = () => {
             <div className="aspect-16/9 group relative w-full h-full">
               <div className="w-full h-full absolute">
                 <Image
-                  src="/threeDArt/lakevillage/ao.png"
+                  src="/threeDArt/lakevillage/ao.jpg"
                   alt="final"
                   width={850}
                   height={450}
@@ -142,7 +142,7 @@ export const LakeVillage = () => {
               {`Here is a gif compilation of my test renders while I was working on this project!`}
             </span>
             <img
-              src="/threeDArt/houseofachild/1_1.gif"
+              src="/threeDArt/lakevillage/1_1.gif"
               alt="final"
               width={650}
               height={450}

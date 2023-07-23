@@ -52,16 +52,34 @@ export const ThreeDContent = () => {
                 name={"Vintage Sewing Machine"}
               />
               <ThreeDArtThumbnail
-                src={"/threeDArt/hope/thumbnail.png"}
-                alt={"hope"}
-                href={"3DArt/Hope"}
-                name={"Hope"}
+                src={"/threeDArt/lakevillage/ao.jpg"}
+                alt={"lakevillage"}
+                href={"3DArt/LakeVillage"}
+                name={"Lake Village"}
+              />
+              <ThreeDArtThumbnail
+                src={"/threeDArt/lakevillage/ao.jpg"}
+                alt={"lakevillage"}
+                href={"3DArt/LakeVillage"}
+                name={"Lake Village"}
+              />
+              <ThreeDArtThumbnail
+                src={"/threeDArt/snowqueenkitchen/ao.png"}
+                alt={"snowqueenkitchen"}
+                href={"3DArt/SnowQueenKitchen"}
+                name={"Snow Queen Kitchen"}
               />
               <ThreeDArtThumbnail
                 src={"/threeDArt/callioujourney/thumbnail.jpg"}
                 alt={"callioujourney"}
                 href={"3DArt/CalliouJourney"}
                 name={"Calliou's Journey"}
+              />
+              <ThreeDArtThumbnail
+                src={"/threeDArt/hope/thumbnail.png"}
+                alt={"hope"}
+                href={"3DArt/Hope"}
+                name={"Hope"}
               />
             </>
           </Grid>
