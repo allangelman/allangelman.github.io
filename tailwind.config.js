@@ -5,6 +5,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      display: ["Oswald"],
+      body: ["Oswald"],
+    },
     extend: {
       aspectRatio: {
         "7/4": "7 / 4",
