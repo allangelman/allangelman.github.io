@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import Image from "next/image";
 import { Layout } from "../Layout";
-import cn from "classnames";
-import * as Slider from "@radix-ui/react-slider";
 import { useState } from "react";
 
 export const SewingMachine = () => {
