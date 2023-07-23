@@ -13,7 +13,7 @@ export const Header = () => {
           <HeaderCategory name={"3d art"} href={"/3DArt"} />
           <HeaderCategory name={"immersive"} href={"/VRAR"} />
           <HeaderCategory name={"painting"} href={"/Painting"} />
-          <HeaderCategory name={"sewing"} href={"/Painting"} />
+          <HeaderCategory name={"sewing"} href={"/Sewing"} />
           <HeaderCategory name={"about"} />
         </div>
       </div>
