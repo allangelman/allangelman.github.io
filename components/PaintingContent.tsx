@@ -22,7 +22,7 @@ export const PaintingContent = () => {
       <>
         <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
           <div>
-            <Painting src={"/paintings/kaz.png"} alt={"max"} />
+            <Painting src={"/paintings/kaz.png"} alt={"max"} priority />
             <Painting src={"/paintings/inej.png"} alt={"inej"} />
             <Painting src={"/paintings/jesper.png"} alt={"jesper"} />
             <Painting src={"/paintings/sun.png"} alt={"sun"} />
@@ -50,9 +50,10 @@ export const PaintingContent = () => {
 interface PainttingProps {
   src: string;
   alt: string;
+  priority?: boolean;
 }
 
-export const Painting = ({ src, alt }: PainttingProps) => {
+export const Painting = ({ src, alt, priority }: PainttingProps) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
@@ -77,6 +78,7 @@ export const Painting = ({ src, alt }: PainttingProps) => {
           >
             <Image
               src={src}
+              priority={priority}
               loader={myLoader}
               alt={alt}
               width={1200}

@@ -1,10 +1,7 @@
 import { Layout } from "./Layout";
 import Image from "next/image";
-import * as Dialog from "@radix-ui/react-dialog";
 
 import { useState } from "react";
-import cn from "classnames";
-import { Cross2Icon } from "@radix-ui/react-icons";
 
 interface imageLoaderProps {
   src: string;
