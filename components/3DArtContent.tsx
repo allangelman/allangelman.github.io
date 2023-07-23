@@ -58,10 +58,10 @@ export const ThreeDContent = () => {
                 name={"Lake Village"}
               />
               <ThreeDArtThumbnail
-                src={"/threeDArt/lakevillage/ao.jpg"}
-                alt={"lakevillage"}
-                href={"3DArt/LakeVillage"}
-                name={"Lake Village"}
+                src={"/threeDArt/fairyhouse/thumbnail.png"}
+                alt={"fairyhouse"}
+                href={"3DArt/FairyHouse"}
+                name={"Fairy House"}
               />
               <ThreeDArtThumbnail
                 src={"/threeDArt/snowqueenkitchen/ao.png"}
