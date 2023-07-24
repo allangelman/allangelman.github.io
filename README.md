@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## To Do
 
-## Getting Started
+- coding projects content
+- immersive section content
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- add preview hover for paintings
+- do a pass for image loading time
+- do a pass for image fading in (about page, sewing page, etc.)
+- fonts/colors
+- vimeo component style
+- image slider component stle
+- style for coding thumbnails
+- footer style
+- header style
+- do pass for adding links to concept art in 3d art section
+- do pass fix paragraph centering in 3d art section
+- make sure everything is responsive
+- add titles to 3d art section
+- add ability to open images larger in 3d art section
+- change gan xml thumbnail to not be white background
+- update mastermind project thumbnail to be more understandable and fix spacing at bottom
+- sewing page load time, decrease image file size
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- add little tab icon
+- when finished, replace old website with new one on socials
+- create custom URL
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- css animations/three.js for about page or header?
+- make thumbnail/renders for houdini lamp
+- make scene for mushroom project
+- create/add new ar project?
+- add three.js project?

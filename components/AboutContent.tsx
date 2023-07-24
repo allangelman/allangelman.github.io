@@ -18,14 +18,20 @@ export const AboutContent = () => {
   return (
     <Layout>
       <>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <div className="max-w-[1/2] max-h-[1/2] justify-center items-center flex">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div
+            className="max-w-[1/2] max-h-[1/2] justify-center items-center flex"
+            style={{
+              borderRadius: "8px",
+              overflow: "hidden",
+            }}
+          >
             <Image
               src={"/about/me.jpg"}
               loader={myLoader}
               alt={"alt"}
-              width={500}
-              height={450}
+              width={1000}
+              height={1000}
               onLoad={() => {
                 setImageIsLoaded(true);
               }}

@@ -105,7 +105,7 @@ export const ThreeDArtThumbnail = ({
 
   return (
     <a href={href}>
-      <div className="aspect-5/3 relative">
+      <div className="aspect-5/3 relative hover:scale-[1.01] transition duration-300">
         <div
           className={cn("w-full h-full absolute", {
             "opacity-100 transition duration-3000": imageIsLoaded,
@@ -128,7 +128,7 @@ export const ThreeDArtThumbnail = ({
             }}
           />
         </div>
-        <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl text-transparent hover:text-black hover:bg-white/70">
+        <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl font-semibold text-transparent hover:bg-white/20">
           {name}
         </div>
       </div>

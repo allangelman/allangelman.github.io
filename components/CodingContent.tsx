@@ -13,7 +13,7 @@ export const CodingContent = () => {
             src={"/coding/mastermind/mastermindthumbnail.png"}
             alt={"mastermind"}
             href={"3DArt/HouseOfAChild"}
-            name={"Mastermind"}
+            name={"Code Breaking Game"}
             tools={"TypeScript"}
           />
           <CodingContentThumbnail
@@ -80,10 +80,13 @@ export const CodingContentThumbnail = ({
   return (
     <a href={href}>
       <div
-        className={cn("rounded-lg hover:scale-[1.01] transition duration-300", {
-          "opacity-100 transition duration-3000": imageIsLoaded,
-          "opacity-0": !imageIsLoaded,
-        })}
+        className={cn(
+          "rounded-lg hover:scale-[1.01] transition duration-300 drop-shadow-xl",
+          {
+            "opacity-100 transition duration-3000": imageIsLoaded,
+            "opacity-0": !imageIsLoaded,
+          }
+        )}
         style={{
           overflow: "hidden",
           transition: "0.3s",
@@ -103,8 +106,8 @@ export const CodingContentThumbnail = ({
             />
           </div>
         </div>
-        <div className="h-20 w-full bg-blue-500 flex items-center justify-center text-white space-y-1 flex-col">
-          <span>{name}</span>
+        <div className="h-20 w-full bg-white flex items-center justify-center text-black space-y-1 flex-col">
+          <span className="text-lg font-bold">{name}</span>
           <span>{tools}</span>
         </div>
       </div>

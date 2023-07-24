@@ -22,24 +22,77 @@ export const PaintingContent = () => {
       <>
         <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
           <div>
-            <Painting src={"/paintings/kaz.png"} alt={"max"} priority />
-            <Painting src={"/paintings/inej.png"} alt={"inej"} />
-            <Painting src={"/paintings/jesper.png"} alt={"jesper"} />
-            <Painting src={"/paintings/sun.png"} alt={"sun"} />
-            <Painting src={"/paintings/claudia.png"} alt={"claudia"} />
-            <Painting src={"/paintings/push.png"} alt={"push"} />
-            <Painting src={"/paintings/meilin.png"} alt={"meilin"} />
+            <Painting
+              src={"/paintings/kaz.png"}
+              alt={"max"}
+              priority
+              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/inej.png"}
+              alt={"inej"}
+              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/jesper.png"}
+              alt={"jesper"}
+              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/sun.png"}
+              alt={"sun"}
+              label={"Film study from Sense8 (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/claudia.png"}
+              alt={"claudia"}
+              label={
+                "Film study from Interview with the Vampire (Painted in Photoshop)"
+              }
+            />
+            <Painting
+              src={"/paintings/push.png"}
+              alt={"push"}
+              label={"Film study from Push (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/meilin.png"}
+              alt={"meilin"}
+              label={"Film study from Turning Red (Painted in Photoshop)"}
+            />
           </div>
         </div>
         <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
           <div>
-            <Painting src={"/paintings/bentaylor.png"} alt={"bentaylor"} />
-            <Painting src={"/paintings/natasha.png"} alt={"natasha"} />
-            <Painting src={"/paintings/kalamax.png"} alt={"kalamax"} />
+            <Painting
+              src={"/paintings/bentaylor.png"}
+              alt={"bentaylor"}
+              label={
+                "Portraits of Ben Levi Ross and Taylor Trensch (Painted in Photoshop)"
+              }
+            />
+            <Painting
+              src={"/paintings/natasha.png"}
+              alt={"natasha"}
+              label={"Portrait of Denee Benton (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/kalamax.png"}
+              alt={"kalamax"}
+              label={"Portraits from Sense8 (Painted with acrylic on paper)"}
+            />
           </div>
           <div>
-            <Painting src={"/paintings/L.png"} alt={"L"} />
-            <Painting src={"/paintings/Pavement.jpg"} alt={"pavement"} />
+            <Painting
+              src={"/paintings/L.png"}
+              alt={"L"}
+              label={"Portrait of a freind (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/Pavement.jpg"}
+              alt={"pavement"}
+              label={"Photo study (Painted with oil paint on board)"}
+            />
           </div>
         </div>
       </>
@@ -51,27 +104,33 @@ interface PainttingProps {
   src: string;
   alt: string;
   priority?: boolean;
+  label: string;
 }
 
-export const Painting = ({ src, alt, priority }: PainttingProps) => {
+export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <div
-          className={cn("mt-4 hover:scale-[1.01] transition duration-300", {
-            "opacity-100 transition duration-3000": imageIsLoaded,
-            "opacity-0": !imageIsLoaded,
-          })}
+          className={cn(
+            "mt-4 hover:scale-[1.01] relative group transition duration-300",
+            {
+              "opacity-100 transition duration-3000": imageIsLoaded,
+              "opacity-0": !imageIsLoaded,
+            }
+          )}
           style={{
             borderRadius: "8px",
             overflow: "hidden",
             transition: "0.3s",
           }}
         >
+          <div className="w-full h-10 bottom-0 align-baseline absolute bg-transparent transition group-hover:bg-black/60 group-hover:text-white/80 text-transparent flex items-center pl-5">
+            {label}
+          </div>
           <div
-            className=""
             style={{
               transformOrigin: "center",
             }}
@@ -94,7 +153,7 @@ export const Painting = ({ src, alt, priority }: PainttingProps) => {
         <Dialog.Overlay className="fixed inset-0 bg-white/80">
           <Dialog.Content className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[93vw] h-[93vw] max-w-[93vw] max-h-[93vh] outline-none rounded-lg">
             <Image
-              className="image"
+              className="image" //why is this here?
               src={src}
               loader={myLoader}
               alt={alt}
