@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <>
       <div className="flex flex-row items-end mb-8 py-4 bg-white top-0 max-md:flex-col max-md:items-center">
-        <div className="text-5xl text-slate-800 grow whitespace-nowrap max-md:text-3xl max-md:pb-4">
+        <div className="text-5xl text-slate-900 font-extralight grow whitespace-nowrap max-md:text-3xl max-md:pb-4">
           <Link href={"/"}>ALLAN GELMAN</Link>
         </div>
 
@@ -29,7 +29,7 @@ interface HeaderCategoryProps {
 const HeaderCategory = ({ name, href }: HeaderCategoryProps) => {
   return (
     <Link href={href ?? "/"}>
-      <div className="text-lg whitespace-nowrap text-slate-800 hover:text-slate-500">
+      <div className="text-lg font-extralight whitespace-nowrap text-slate-900 hover:text-slate-500">
         {name}
       </div>
     </Link>

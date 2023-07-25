@@ -22,6 +22,11 @@
 - change gan xml thumbnail to not be white background
 - update mastermind project thumbnail to be more understandable and fix spacing at bottom
 - sewing page load time, decrease image file size
+- maybe make about section more like a mini resume, add list of skills, education, more bullets, less sentences
+- fade in for modals?
+- x bigger in modals?
+- maybe nothing needs to be its own page, but can rather be modal that slides in?
+- coding section should just have summaries and link to github mainly?
 
 ---
 

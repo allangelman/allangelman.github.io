@@ -28,6 +28,7 @@ export const AboutContent = () => {
           >
             <Image
               src={"/about/me.jpg"}
+              priority
               loader={myLoader}
               alt={"alt"}
               width={1000}

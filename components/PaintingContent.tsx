@@ -150,7 +150,7 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
         </div>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-white/80">
+        <Dialog.Overlay className="fixed inset-0 bg-white/50 backdrop-blur-sm">
           <Dialog.Content className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[93vw] h-[93vw] max-w-[93vw] max-h-[93vh] outline-none rounded-lg">
             <Image
               className="image" //why is this here?
