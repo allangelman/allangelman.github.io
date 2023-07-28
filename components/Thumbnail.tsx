@@ -1,65 +1,9 @@
-import { Layout } from "./Layout";
-import { Grid } from "./Grid";
 import { useState, ReactElement } from "react";
 import cn from "classnames";
 import Image from "next/image";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import styles from "../styles/Home.module.css";
-import { CodeBreaking } from "./CodingPages/CodeBreaking";
-import { Thumbnail } from "./Thumbnail";
-
-export const CodingContent = () => {
-  return (
-    <Layout>
-      <Grid>
-        <>
-          <Thumbnail
-            src={"/coding/mastermind/mastermindthumbnail.png"}
-            alt={"mastermind"}
-            name={"Code Breaking Game"}
-            tools={"TypeScript"}
-          >
-            <CodeBreaking />
-          </Thumbnail>
-
-          <Thumbnail
-            src={"/coding/raytracer/raytracerthumbnail.png"}
-            alt={"raytracer"}
-            name={"Ray Tracer with OBJ Loading"}
-            tools={"C++"}
-          >
-            <></>
-          </Thumbnail>
-          <Thumbnail
-            src={"/coding/strawlamptool/lamp.png"}
-            alt={"strawlamptool"}
-            name={"Procedural Straw Lamp Tool"}
-            tools={"Houdini"}
-          >
-            <></>
-          </Thumbnail>
-          <Thumbnail
-            src={"/coding/ganxmlfixer/gan.png"}
-            alt={"ganxmlfixer"}
-            name={"GAN XML Fixer"}
-            tools={"Python"}
-          >
-            <></>
-          </Thumbnail>
-          <Thumbnail
-            src={"/coding/mushroomtool/mush.png"}
-            alt={"mushroomtool"}
-            name={"Procedural Mushroom Tool"}
-            tools={"Python, Maya"}
-          >
-            <></>
-          </Thumbnail>
-        </>
-      </Grid>
-    </Layout>
-  );
-};
 
 interface imageLoaderProps {
   src: string;
@@ -71,7 +15,7 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
   return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
 };
 
-interface CodingContentThumbnailProps {
+interface ThumbnailProps {
   src: string;
   alt: string;
   name: string;
@@ -79,13 +23,13 @@ interface CodingContentThumbnailProps {
   children: ReactElement;
 }
 
-export const CodingContentThumbnail = ({
+export const Thumbnail = ({
   src,
   alt,
   name,
   tools,
   children,
-}: CodingContentThumbnailProps) => {
+}: ThumbnailProps) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
@@ -128,13 +72,13 @@ export const CodingContentThumbnail = ({
         <Dialog.Overlay
           className={cn(
             styles.DialogOverlay,
-            "fixed inset-0 bg-white/50 backdrop-blur-sm"
+            "fixed inset-0 bg-slate-600/50 backdrop-blur-sm"
           )}
         >
           <Dialog.Content
             className={cn(
               styles.DialogContent,
-              "fixed top-1/2 left-1/2 transform border-2 border-slate-500 bg-white sm:p-4 overflow-y-scroll -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[55vw] h-[93vh] max-w-[90vw] md:max-w-[55vw] max-h-[93vh] outline-none rounded-lg"
+              "fixed top-1/2 left-1/2 transform bg-white sm:p-4 overflow-y-scroll -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[55vw] h-[93vh] max-w-[90vw] md:max-w-[55vw] max-h-[93vh] outline-none rounded-lg"
             )}
           >
             {children}

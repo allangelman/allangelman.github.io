@@ -5,6 +5,9 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { useState } from "react";
 import cn from "classnames";
 import { Cross2Icon } from "@radix-ui/react-icons";
+import { Grid } from "./Grid";
+import { Thumbnail } from "./Thumbnail";
+import { HouseOfAChild } from "./3DArtPages/HouseOfAChild";
 
 interface imageLoaderProps {
   src: string;
@@ -19,7 +22,119 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
 export const PaintingContent = () => {
   return (
     <Layout>
-      <>
+      <Grid>
+        <>
+          <Thumbnail
+            src={"/paintings/kaz.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/inej.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/jesper.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/sun.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/claudia.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/push.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/meilin.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/bentaylor.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/natasha.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/kalamax.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/L.png"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+          <Thumbnail
+            src={"/paintings/Pavement.jpg"}
+            alt={"houseofachild"}
+            // href={"3DArt/HouseOfAChild"}
+            name={"Film Study"}
+            tools={"Photoshop"}
+          >
+            <HouseOfAChild />
+          </Thumbnail>
+        </>
+      </Grid>
+      {/* <>
         <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
           <div>
             <Painting
@@ -95,7 +210,7 @@ export const PaintingContent = () => {
             />
           </div>
         </div>
-      </>
+      </> */}
     </Layout>
   );
 };
@@ -166,7 +281,7 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
           </Dialog.Content>
           <Dialog.Close asChild>
             <button
-              className="text-black flex h-10 w-10 rounded-full absolute top-[10px] right-[10px] items-center  outline-none justify-center"
+              className="text-black flex h-10 w-10 rounded-full absolute top-[10px] right-[10px] items-center outline-none justify-center"
               aria-label="Close"
             >
               <Cross2Icon />

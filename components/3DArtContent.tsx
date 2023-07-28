@@ -8,79 +8,95 @@ import * as Dialog from "@radix-ui/react-dialog";
 import styles from "../styles/Home.module.css";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { HouseOfAChild } from "./3DArtPages/HouseOfAChild";
+import { AntiqueShop } from "./3DArtPages/AntiqueShop";
+import { SewingMachine } from "./3DArtPages/SewingMachine";
+import { LakeVillage } from "./3DArtPages/LakeVillage";
+import { FairyHouse } from "./3DArtPages/FairyHouse";
+import { SnowQueenKitchen } from "./3DArtPages/SnowQueenKitchen";
+import { CalliouJourney } from "./3DArtPages/CalliouJourney";
+import { Hope } from "./3DArtPages/Hope";
+import { Thumbnail } from "./Thumbnail";
 
 export const ThreeDContent = () => {
   return (
     <>
       <Layout>
         <div className="space-y-4">
-          <Vimeo videoID={"534692300"} />
+          {/* <Vimeo videoID={"534692300"} /> */}
           <Grid>
             <>
-              <ThreeDArtThumbnail
+              <Thumbnail
                 src={"/threeDArt/houseofachild/sidebyside.png"}
                 alt={"houseofachild"}
-                href={"3DArt/HouseOfAChild"}
+                // href={"3DArt/HouseOfAChild"}
                 name={"House of a Child"}
+                tools={"Maya"}
               >
                 <HouseOfAChild />
-              </ThreeDArtThumbnail>
-              <ThreeDArtThumbnail
+              </Thumbnail>
+              <Thumbnail
                 src={"/threeDArt/antiqueshop/TheAntiqueShopThumbnail.png"}
                 alt={"antiqueshop"}
-                href={"3DArt/AntiqueShop"}
+                // href={"3DArt/AntiqueShop"}
                 name={"The Antique Shop"}
+                tools={"Maya"}
               >
-                <></>
-              </ThreeDArtThumbnail>
-              <ThreeDArtThumbnail
+                <AntiqueShop />
+              </Thumbnail>
+              <Thumbnail
                 src={"/threeDArt/sewingmachine/sewingmachinethumb.png"}
                 alt={"sewingmachine"}
-                href={"3DArt/SewingMachine"}
+                // href={"3DArt/SewingMachine"}
                 name={"Vintage Sewing Machine"}
+                tools={"Maya"}
               >
-                <></>
-              </ThreeDArtThumbnail>
-              <ThreeDArtThumbnail
+                <SewingMachine />
+              </Thumbnail>
+              <Thumbnail
                 src={"/threeDArt/lakevillage/ao.jpg"}
                 alt={"lakevillage"}
-                href={"3DArt/LakeVillage"}
+                // href={"3DArt/LakeVillage"}
                 name={"Lake Village"}
+                tools={"Maya"}
               >
-                <></>
-              </ThreeDArtThumbnail>
-              <ThreeDArtThumbnail
+                <LakeVillage />
+              </Thumbnail>
+              <Thumbnail
                 src={"/threeDArt/fairyhouse/thumbnail.png"}
                 alt={"fairyhouse"}
-                href={"3DArt/FairyHouse"}
+                // href={"3DArt/FairyHouse"}
                 name={"Fairy House"}
+                tools={"Maya"}
               >
-                <></>
-              </ThreeDArtThumbnail>
-              <ThreeDArtThumbnail
+                <FairyHouse />
+              </Thumbnail>
+              <Thumbnail
                 src={"/threeDArt/snowqueenkitchen/ao.png"}
                 alt={"snowqueenkitchen"}
-                href={"3DArt/SnowQueenKitchen"}
+                // href={"3DArt/SnowQueenKitchen"}
                 name={"Snow Queen Kitchen"}
+                tools={"Maya"}
               >
-                <></>
-              </ThreeDArtThumbnail>
-              <ThreeDArtThumbnail
+                <SnowQueenKitchen />
+              </Thumbnail>
+              <Thumbnail
                 src={"/threeDArt/callioujourney/thumbnail.jpg"}
                 alt={"callioujourney"}
-                href={"3DArt/CalliouJourney"}
+                // href={"3DArt/CalliouJourney"}
                 name={"Calliou's Journey"}
+                tools={"Maya"}
               >
-                <></>
-              </ThreeDArtThumbnail>
-              <ThreeDArtThumbnail
+                <CalliouJourney />
+              </Thumbnail>
+              <Thumbnail
                 src={"/threeDArt/hope/thumbnail.png"}
                 alt={"hope"}
-                href={"3DArt/Hope"}
+                // href={"3DArt/Hope"}
                 name={"Hope"}
+                tools={"Maya"}
               >
-                <></>
-              </ThreeDArtThumbnail>
+                <Hope />
+              </Thumbnail>
             </>
           </Grid>
         </div>

@@ -1,5 +1,5 @@
 import { Layout } from "./Layout";
-import { Grid, Thumbnail } from "./Grid";
+import { Grid } from "./Grid";
 
 export const VRARContent = () => {
   return (
@@ -13,4 +13,9 @@ export const VRARContent = () => {
       </Grid>
     </Layout>
   );
+};
+
+interface ThumbnailProps {}
+export const Thumbnail = ({}: ThumbnailProps) => {
+  return <div className="aspect-5/3 rounded-md bg-pink-500" />;
 };
