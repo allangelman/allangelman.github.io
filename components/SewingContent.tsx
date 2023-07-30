@@ -5,6 +5,8 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { useState } from "react";
 import cn from "classnames";
 import { Cross2Icon } from "@radix-ui/react-icons";
+import { Thumbnail } from "./Thumbnail";
+import { Grid } from "./Grid";
 
 interface imageLoaderProps {
   src: string;
@@ -19,36 +21,50 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
 export const SewingContent = () => {
   return (
     <Layout>
-      <>
-        <div className="grid gap-3 grid-col-1 sm:grid-cols-1">
-          <Sewing
+      <Grid>
+        <>
+          <Thumbnail
             src={"/sewing/google.png"}
-            priority
-            secondSrc={"/sewing/scale.jpg"}
             alt={"google"}
-            title={"Felt like Home"}
-            body={
-              "In Fall 2020, my brother Danny Gelman and I, were commisioned by Google (through Art_Works) to create a piece for their new office in Kendall Square, Cambridge, MA. We decided to create a 7' x 6' piece in homage to the Galaxy: Earth Sphere Fountain, a fountain we walked by numerous times during college at MIT. This was the second and most ambitious work entirely created out of felt. The process took many months of planning and execution."
-            }
-          />
-          <Sewing
+            name={"Felt like Home"}
+            tools={""}
+          >
+            <div>
+              In Fall 2020, my brother Danny Gelman and I, were commisioned by
+              Google (through Art_Works) to create a piece for their new office
+              in Kendall Square, Cambridge, MA. We decided to create a 7 x 6
+              piece in homage to the Galaxy: Earth Sphere Fountain, a fountain
+              we walked by numerous times during college at MIT. This was the
+              second and most ambitious work entirely created out of felt. The
+              process took many months of planning and execution.
+            </div>
+          </Thumbnail>
+          <Thumbnail
             src={"/sewing/full.jpg"}
             alt={"full"}
-            title={"Stitched Together"}
-            body={
-              "Made in collaboration with Danny Gelman for the OpenMind::OpenArt project at MIT in Spring 2017. Responsible for 1st, 3rd, and 5th portrait (left to right, top to bottom)"
-            }
-          />
-          <Sewing
+            name={"Stitched Together"}
+            tools={""}
+          >
+            <div>
+              Made in collaboration with Danny Gelman for the OpenMind::OpenArt
+              project at MIT in Spring 2017. Responsible for 1st, 3rd, and 5th
+              portrait (left to right, top to bottom)
+            </div>
+          </Thumbnail>
+
+          <Thumbnail
             src={"/sewing/detail.jpg"}
             alt={"detail"}
-            title={"Stitched Together (detail)"}
-            body={
-              "Here is a detail of one of the portraits I was responsible for. As you can see, it is made entirely of hand sewn pieces of felt."
-            }
-          />
-        </div>
-      </>
+            name={"Stitched Together (detail)"}
+            tools={""}
+          >
+            <div>
+              Here is a detail of one of the portraits I was responsible for. As
+              you can see, it is made entirely of hand sewn pieces of felt.
+            </div>
+          </Thumbnail>
+        </>
+      </Grid>
     </Layout>
   );
 };

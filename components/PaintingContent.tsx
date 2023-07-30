@@ -8,6 +8,7 @@ import { Cross2Icon } from "@radix-ui/react-icons";
 import { Grid } from "./Grid";
 import { Thumbnail } from "./Thumbnail";
 import { HouseOfAChild } from "./3DArtPages/HouseOfAChild";
+import { ThumbnailNoLabel } from "./ThumbnailNoLabel";
 
 interface imageLoaderProps {
   src: string;
@@ -24,7 +25,7 @@ export const PaintingContent = () => {
     <Layout>
       <Grid>
         <>
-          <Thumbnail
+          <ThumbnailNoLabel
             src={"/paintings/kaz.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -32,8 +33,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/inej.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -41,8 +42,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/jesper.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -50,8 +51,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/sun.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -59,8 +60,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/claudia.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -68,8 +69,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/push.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -77,8 +78,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/meilin.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -86,8 +87,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/bentaylor.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -95,8 +96,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/natasha.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -104,8 +105,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/kalamax.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -113,8 +114,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/L.png"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -122,8 +123,8 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
-          <Thumbnail
+          </ThumbnailNoLabel>
+          <ThumbnailNoLabel
             src={"/paintings/Pavement.jpg"}
             alt={"houseofachild"}
             // href={"3DArt/HouseOfAChild"}
@@ -131,7 +132,7 @@ export const PaintingContent = () => {
             tools={"Photoshop"}
           >
             <HouseOfAChild />
-          </Thumbnail>
+          </ThumbnailNoLabel>
         </>
       </Grid>
       {/* <>
