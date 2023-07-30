@@ -23,7 +23,7 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
 export const PaintingContent = () => {
   return (
     <Layout>
-      <Grid>
+      {/* <Grid>
         <>
           <ThumbnailNoLabel
             src={"/paintings/kaz.png"}
@@ -134,9 +134,9 @@ export const PaintingContent = () => {
             <HouseOfAChild />
           </ThumbnailNoLabel>
         </>
-      </Grid>
-      {/* <>
-        <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
+      </Grid> */}
+      <>
+        {/* <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
           <div>
             <Painting
               src={"/paintings/kaz.png"}
@@ -177,9 +177,21 @@ export const PaintingContent = () => {
               label={"Film study from Turning Red (Painted in Photoshop)"}
             />
           </div>
-        </div>
+        </div> */}
         <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
           <div>
+            <Painting
+              src={"/paintings/claudia.png"}
+              alt={"claudia"}
+              label={
+                "Film study from Interview with the Vampire (Painted in Photoshop)"
+              }
+            />
+            <Painting
+              src={"/paintings/push.png"}
+              alt={"push"}
+              label={"Film study from Push (Painted in Photoshop)"}
+            />
             <Painting
               src={"/paintings/bentaylor.png"}
               alt={"bentaylor"}
@@ -199,10 +211,36 @@ export const PaintingContent = () => {
             />
           </div>
           <div>
-            <Painting
+            {/* <Painting
               src={"/paintings/L.png"}
               alt={"L"}
               label={"Portrait of a freind (Painted in Photoshop)"}
+            /> */}
+            <Painting
+              src={"/paintings/kaz.png"}
+              alt={"max"}
+              priority
+              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/sun.png"}
+              alt={"sun"}
+              label={"Film study from Sense8 (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/inej.png"}
+              alt={"inej"}
+              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/meilin.png"}
+              alt={"meilin"}
+              label={"Film study from Turning Red (Painted in Photoshop)"}
+            />
+            <Painting
+              src={"/paintings/jesper.png"}
+              alt={"jesper"}
+              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
             />
             <Painting
               src={"/paintings/Pavement.jpg"}
@@ -211,7 +249,7 @@ export const PaintingContent = () => {
             />
           </div>
         </div>
-      </> */}
+      </>
     </Layout>
   );
 };
@@ -231,15 +269,15 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
       <Dialog.Trigger asChild>
         <div
           className={cn(
-            "mt-4 hover:scale-[1.01] relative group transition duration-300",
+            "mt-4 hover:scale-[1.01] relative group transition duration-300 outline-none border-none",
             {
               "opacity-100 transition duration-3000": imageIsLoaded,
               "opacity-0": !imageIsLoaded,
             }
           )}
           style={{
-            borderRadius: "8px",
-            overflow: "hidden",
+            // borderRadius: "8px",
+            // overflow: "hidden",
             transition: "0.3s",
           }}
         >

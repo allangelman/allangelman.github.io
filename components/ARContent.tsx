@@ -14,19 +14,25 @@ export const ARContent = () => {
             <>
               <Thumbnail
                 src={"/AR/borderline.png"}
-                alt={"borderline"}
+                alt={"The Borderline @ MIT"}
                 // href={"3DArt/HouseOfAChild"}
-                name={"Borderline"}
-                tools={"AR"}
+                name={"The Borderline @ MIT"}
+                tools={[
+                  "Photoshop",
+                  "Adobe Animate",
+                  "Unity",
+                  "Vuforia",
+                  "Artivive",
+                ]}
               >
                 <HouseOfAChild />
               </Thumbnail>
               <Thumbnail
                 src={"/AR/google.png"}
-                alt={"antiqueshop"}
+                alt={"AR Murals Google Comission"}
                 // href={"3DArt/AntiqueShop"}
-                name={"Google comission"}
-                tools={"AR"}
+                name={"AR Murals Google Comission"}
+                tools={["Photoshop", "Artivive"]}
               >
                 <AntiqueShop />
               </Thumbnail>

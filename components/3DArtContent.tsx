@@ -30,7 +30,7 @@ export const ThreeDContent = () => {
                 alt={"houseofachild"}
                 // href={"3DArt/HouseOfAChild"}
                 name={"House of a Child"}
-                tools={"Maya"}
+                tools={["Maya", "Substance Painter", "Arnold"]}
               >
                 <HouseOfAChild />
               </Thumbnail>
@@ -39,7 +39,7 @@ export const ThreeDContent = () => {
                 alt={"antiqueshop"}
                 // href={"3DArt/AntiqueShop"}
                 name={"The Antique Shop"}
-                tools={"Maya"}
+                tools={["Maya", "Substance Painter", "Houdini", "Arnold"]}
               >
                 <AntiqueShop />
               </Thumbnail>
@@ -48,7 +48,7 @@ export const ThreeDContent = () => {
                 alt={"sewingmachine"}
                 // href={"3DArt/SewingMachine"}
                 name={"Vintage Sewing Machine"}
-                tools={"Maya"}
+                tools={["Maya", "Substance Painter", "Zbrush", "Arnold"]}
               >
                 <SewingMachine />
               </Thumbnail>
@@ -57,7 +57,7 @@ export const ThreeDContent = () => {
                 alt={"lakevillage"}
                 // href={"3DArt/LakeVillage"}
                 name={"Lake Village"}
-                tools={"Maya"}
+                tools={["Maya", "Houdini", "Arnold"]}
               >
                 <LakeVillage />
               </Thumbnail>
@@ -66,7 +66,7 @@ export const ThreeDContent = () => {
                 alt={"fairyhouse"}
                 // href={"3DArt/FairyHouse"}
                 name={"Fairy House"}
-                tools={"Maya"}
+                tools={["Maya", "Arnold"]}
               >
                 <FairyHouse />
               </Thumbnail>
@@ -75,7 +75,7 @@ export const ThreeDContent = () => {
                 alt={"snowqueenkitchen"}
                 // href={"3DArt/SnowQueenKitchen"}
                 name={"Snow Queen Kitchen"}
-                tools={"Maya"}
+                tools={["Maya", "Arnold"]}
               >
                 <SnowQueenKitchen />
               </Thumbnail>
@@ -84,7 +84,7 @@ export const ThreeDContent = () => {
                 alt={"callioujourney"}
                 // href={"3DArt/CalliouJourney"}
                 name={"Calliou's Journey"}
-                tools={"Maya"}
+                tools={["Maya", "Substance Painter", "Arnold"]}
               >
                 <CalliouJourney />
               </Thumbnail>
@@ -93,7 +93,7 @@ export const ThreeDContent = () => {
                 alt={"hope"}
                 // href={"3DArt/Hope"}
                 name={"Hope"}
-                tools={"Maya"}
+                tools={["Maya", "Substance Painter", "Arnold"]}
               >
                 <Hope />
               </Thumbnail>

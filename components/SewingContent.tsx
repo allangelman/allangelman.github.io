@@ -27,7 +27,7 @@ export const SewingContent = () => {
             src={"/sewing/google_thumbnail.png"}
             alt={"google"}
             name={"Felt like Home"}
-            tools={""}
+            tools={["Felt", "Thread"]}
           >
             <div>
               In Fall 2020, my brother Danny Gelman and I, were commisioned by
@@ -43,7 +43,7 @@ export const SewingContent = () => {
             src={"/sewing/full_thumbnail.jpg"}
             alt={"full"}
             name={"Stitched Together"}
-            tools={""}
+            tools={["Felt", "Thread"]}
           >
             <div>
               Made in collaboration with Danny Gelman for the OpenMind::OpenArt
@@ -56,7 +56,7 @@ export const SewingContent = () => {
             src={"/sewing/detail.jpg"}
             alt={"detail"}
             name={"Stitched Together (detail)"}
-            tools={""}
+            tools={["Felt", "Thread"]}
           >
             <div>
               Here is a detail of one of the portraits I was responsible for. As

@@ -18,7 +18,7 @@ export const CodingContent = () => {
             src={"/coding/mastermind/mastermindthumbnail.png"}
             alt={"mastermind"}
             name={"Code Breaking Game"}
-            tools={"TypeScript"}
+            tools={["TypeScript", "React", "PostgreSQL"]}
           >
             <CodeBreaking />
           </Thumbnail>
@@ -27,7 +27,7 @@ export const CodingContent = () => {
             src={"/coding/raytracer/raytracerthumbnail.png"}
             alt={"raytracer"}
             name={"Ray Tracer with OBJ Loading"}
-            tools={"C++"}
+            tools={["C++"]}
           >
             <></>
           </Thumbnail>
@@ -35,7 +35,7 @@ export const CodingContent = () => {
             src={"/coding/strawlamptool/lamp.png"}
             alt={"strawlamptool"}
             name={"Procedural Straw Lamp Tool"}
-            tools={"Houdini"}
+            tools={["Houdini", "VEX"]}
           >
             <></>
           </Thumbnail>
@@ -43,7 +43,7 @@ export const CodingContent = () => {
             src={"/coding/ganxmlfixer/gan.png"}
             alt={"ganxmlfixer"}
             name={"GAN XML Fixer"}
-            tools={"Python"}
+            tools={["Python"]}
           >
             <></>
           </Thumbnail>
@@ -51,7 +51,7 @@ export const CodingContent = () => {
             src={"/coding/mushroomtool/mush.png"}
             alt={"mushroomtool"}
             name={"Procedural Mushroom Tool"}
-            tools={"Python, Maya"}
+            tools={["Python", "Maya"]}
           >
             <></>
           </Thumbnail>

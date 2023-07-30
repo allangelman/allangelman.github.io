@@ -90,9 +90,6 @@ export const ThumbnailNoLabel = ({
               }}
             />
           </div>
-          <div className="w-full h-full rounded-lg absolute bg-transparent flex items-center justify-center text-2xl font-semibold text-transparent">
-            {name}
-          </div>
         </div>
       </Dialog.Trigger>
       <Dialog.Portal>

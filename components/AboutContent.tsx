@@ -1,6 +1,6 @@
 import { Layout } from "./Layout";
 import Image from "next/image";
-
+import cn from "classnames";
 import { useState } from "react";
 
 interface imageLoaderProps {
@@ -18,9 +18,15 @@ export const AboutContent = () => {
   return (
     <Layout>
       <>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center mx-40">
           <div
-            className="max-w-[1/2] max-h-[1/2] justify-center items-center flex"
+            className={cn(
+              "max-w-[1/2] max-h-[1/2] justify-center items-center flex",
+              {
+                "opacity-100 transition duration-3000": imageIsLoaded,
+                "opacity-0": !imageIsLoaded,
+              }
+            )}
             style={{
               borderRadius: "8px",
               overflow: "hidden",

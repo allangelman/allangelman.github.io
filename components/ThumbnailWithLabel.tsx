@@ -15,7 +15,7 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
   return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
 };
 
-interface ThumbnailProps {
+interface ThumbnailWithLabelProps {
   src: string;
   alt: string;
   name: string;
@@ -23,30 +23,31 @@ interface ThumbnailProps {
   children: ReactElement;
 }
 
-export const Thumbnail = ({
+export const ThumbnailWithLabel = ({
   src,
   alt,
   name,
   tools,
   children,
-}: ThumbnailProps) => {
+}: ThumbnailWithLabelProps) => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <div
-          className={cn("hover:scale-[1.01] transition duration-300", {
-            "opacity-100 transition duration-3000": imageIsLoaded,
-            "opacity-0": !imageIsLoaded,
-          })}
-          style={{
-            // overflow: "hidden",
-            transition: "0.3s",
-          }}
-        >
-          <div className="aspect-5/3 relative">
-            <div className={cn("w-full h-full  absolute")}>
+        <div className="flex flex-col space-y-2">
+          <div className="aspect-5/3 relative hover:scale-[1.01] transition duration-300">
+            <div
+              className={cn("w-full h-full absolute ", {
+                "opacity-100 transition duration-3000": imageIsLoaded,
+                "opacity-0": !imageIsLoaded,
+              })}
+              style={{
+                // borderRadius: "8px",
+                overflow: "hidden",
+                transition: "0.3s",
+              }}
+            >
               <Image
                 src={src}
                 loader={myLoader}
@@ -59,7 +60,7 @@ export const Thumbnail = ({
               />
             </div>
           </div>
-          <div className="h-20 w-full bg-slate-100 flex items-center justify-center text-black space-y-2 flex-col pb-2">
+          <div className="h-20 w-full bg-white flex items-center justify-center text-black space-y-2 flex-col pb-2">
             <span className="text-lg font-bold">{name}</span>
             <div className="space-x-2">
               <>
@@ -67,7 +68,7 @@ export const Thumbnail = ({
                   return (
                     <span
                       key={tool}
-                      className="text-slate-800 text-xs rounded bg-slate-300/50 p-1"
+                      className="text-black bg-slate-500/50 rounded p-2"
                     >
                       {tool}
                     </span>
