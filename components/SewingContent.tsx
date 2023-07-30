@@ -24,7 +24,7 @@ export const SewingContent = () => {
       <Grid>
         <>
           <Thumbnail
-            src={"/sewing/google.png"}
+            src={"/sewing/google_thumbnail.png"}
             alt={"google"}
             name={"Felt like Home"}
             tools={""}
@@ -40,7 +40,7 @@ export const SewingContent = () => {
             </div>
           </Thumbnail>
           <Thumbnail
-            src={"/sewing/full.jpg"}
+            src={"/sewing/full_thumbnail.jpg"}
             alt={"full"}
             name={"Stitched Together"}
             tools={""}
