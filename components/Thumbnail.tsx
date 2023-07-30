@@ -36,28 +36,22 @@ export const Thumbnail = ({
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <div
-          className={cn("hover:scale-[1.01] transition duration-300", {
-            "opacity-100 transition duration-3000": imageIsLoaded,
+          className={cn(styles.thumbnail, "relative", {
+            "opacity-100": imageIsLoaded,
             "opacity-0": !imageIsLoaded,
           })}
-          style={{
-            // overflow: "hidden",
-            transition: "0.3s",
-          }}
         >
           <div className="aspect-5/3 relative">
-            <div className={cn("w-full h-full  absolute")}>
-              <Image
-                src={src}
-                loader={myLoader}
-                alt={alt}
-                layout="fill"
-                objectFit="cover"
-                onLoad={() => {
-                  setImageIsLoaded(true);
-                }}
-              />
-            </div>
+            <Image
+              src={src}
+              loader={myLoader}
+              alt={alt}
+              layout="fill"
+              objectFit="cover"
+              onLoad={() => {
+                setImageIsLoaded(true);
+              }}
+            />
           </div>
           <div className="h-20 w-full bg-slate-100 flex items-center justify-center text-black space-y-2 flex-col pb-2">
             <span className="text-lg font-bold">{name}</span>

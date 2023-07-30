@@ -9,6 +9,7 @@ import { Grid } from "./Grid";
 import { Thumbnail } from "./Thumbnail";
 import { HouseOfAChild } from "./3DArtPages/HouseOfAChild";
 import { ThumbnailNoLabel } from "./ThumbnailNoLabel";
+import styles from "../styles/Home.module.css";
 
 interface imageLoaderProps {
   src: string;
@@ -269,6 +270,7 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
       <Dialog.Trigger asChild>
         <div
           className={cn(
+            styles.painting,
             "mt-4 hover:scale-[1.01] relative group transition duration-300 outline-none border-none",
             {
               "opacity-100 transition duration-3000": imageIsLoaded,
@@ -276,9 +278,9 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
             }
           )}
           style={{
-            // borderRadius: "8px",
-            // overflow: "hidden",
-            transition: "0.3s",
+            borderRadius: "8px",
+            overflow: "hidden",
+            // transition: "0.3s",
           }}
         >
           <div className="w-full h-10 bottom-0 align-baseline absolute bg-transparent transition group-hover:bg-black/60 group-hover:text-white/80 text-transparent flex items-center pl-5">
