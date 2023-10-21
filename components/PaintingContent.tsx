@@ -182,6 +182,11 @@ export const PaintingContent = () => {
         <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
           <div>
             <Painting
+              src={"/paintings/push2.png"}
+              alt={"push2"}
+              label={"Film study from Push (Painted in Procreate)"}
+            />
+            <Painting
               src={"/paintings/claudia.png"}
               alt={"claudia"}
               label={
@@ -204,11 +209,6 @@ export const PaintingContent = () => {
               src={"/paintings/natasha.png"}
               alt={"natasha"}
               label={"Portrait of Denee Benton (Painted in Photoshop)"}
-            />
-            <Painting
-              src={"/paintings/kalamax.png"}
-              alt={"kalamax"}
-              label={"Portraits from Sense8 (Painted with acrylic on paper)"}
             />
           </div>
           <div>
@@ -242,11 +242,6 @@ export const PaintingContent = () => {
               src={"/paintings/jesper.png"}
               alt={"jesper"}
               label={"Film study from Shadow and Bone (Painted in Photoshop)"}
-            />
-            <Painting
-              src={"/paintings/Pavement.jpg"}
-              alt={"pavement"}
-              label={"Photo study (Painted with oil paint on board)"}
             />
           </div>
         </div>
@@ -306,8 +301,18 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
         </div>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-white/50 backdrop-blur-sm">
-          <Dialog.Content className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[93vw] h-[93vw] max-w-[93vw] max-h-[93vh] outline-none rounded-lg">
+        <Dialog.Overlay
+          className={cn(
+            styles.DialogOverlay,
+            "fixed inset-0 bg-white/50 backdrop-blur-sm"
+          )}
+        >
+          <Dialog.Content
+            className={cn(
+              styles.DialogContent,
+              "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[93vw] h-[93vw] max-w-[93vw] max-h-[93vh] outline-none rounded-lg"
+            )}
+          >
             <Image
               className="image" //why is this here?
               src={src}
