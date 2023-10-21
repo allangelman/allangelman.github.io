@@ -5,7 +5,8 @@ export const Borderline = () => {
   return (
     <PageTemplate
       title="The Borderline @ MIT"
-      tools={["TypeScript", "React", "PostgreSQL", "Next.js"]}
+      tools={["Photoshop", "Adobe Animate", "Unity", "Vuforia", "Artivive"]}
+      globeLink="https://vimeo.com/531403562"
     >
       <>
         <Image

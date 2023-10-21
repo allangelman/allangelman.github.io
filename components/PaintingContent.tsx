@@ -163,12 +163,6 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
             />
           </Dialog.Content>
           <Dialog.Close asChild>
-            {/* <button
-              className="text-black flex h-10 w-10 rounded-full absolute top-[10px] right-[10px] items-center outline-none justify-center"
-              aria-label="Close"
-            >
-              <Cross2Icon />
-            </button> */}
             <button
               className="text-white flex h-6 w-6 rounded-full absolute top-[10px] bg-black/40 hover:bg-black/60 right-[10px] items-center outline-none justify-center"
               aria-label="Close"

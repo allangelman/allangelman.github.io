@@ -3,7 +3,11 @@ import { PageTemplate } from "../Shared/PageTemplate";
 
 export const StitchedTogether = () => {
   return (
-    <PageTemplate title="Stitched Together" tools={["Felt", "Thread"]}>
+    <PageTemplate
+      title="Stitched Together"
+      tools={["Felt", "Thread"]}
+      globeLink="https://vimeo.com/531403562"
+    >
       <div>
         Made in collaboration with Danny Gelman for the OpenMind::OpenArt
         project at MIT in Spring 2017. Responsible for 1st, 3rd, and 5th
