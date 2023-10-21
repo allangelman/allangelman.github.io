@@ -12,6 +12,8 @@ export const LakeVillage = () => {
       <ThreeDArtTemplate
         title="Lake Village"
         tools={["Maya", "Houdini", "Arnold"]}
+        artstationLink="https://www.artstation.com/artwork/YeEYww"
+        vimeoLink="https://vimeo.com/508947737"
       >
         <>
           <ImageSlider

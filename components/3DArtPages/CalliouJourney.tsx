@@ -8,8 +8,10 @@ export const CalliouJourney = () => {
   return (
     <>
       <ThreeDArtTemplate
-        title="Calliou Journey"
+        title="Calliou's Journey"
         tools={["Maya", "Substance Painter", "Arnold"]}
+        artstationLink="https://www.artstation.com/artwork/zOYo64"
+        vimeoLink="https://vimeo.com/534557526"
       >
         <>
           <ImageSlider

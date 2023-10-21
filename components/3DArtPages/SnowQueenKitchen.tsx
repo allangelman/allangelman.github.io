@@ -8,7 +8,12 @@ import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
 export const SnowQueenKitchen = () => {
   return (
     <>
-      <ThreeDArtTemplate title="Snow Queen Kitchen" tools={["Maya", "Arnold"]}>
+      <ThreeDArtTemplate
+        title="Snow Queen Kitchen"
+        tools={["Maya", "Arnold"]}
+        artstationLink="https://www.artstation.com/artwork/ELDWqA"
+        vimeoLink="https://vimeo.com/512402836"
+      >
         <>
           <ImageSlider
             firstImagePath="/threeDArt/snowqueenkitchen/ao.png"

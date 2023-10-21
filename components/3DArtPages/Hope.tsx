@@ -10,6 +10,8 @@ export const Hope = () => {
       <ThreeDArtTemplate
         title="Hope"
         tools={["Maya", "Substance Painter", "Arnold"]}
+        artstationLink="https://www.artstation.com/artwork/Krwm1G"
+        vimeoLink="https://vimeo.com/531403562"
       >
         <>
           <ImageSlider

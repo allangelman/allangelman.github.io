@@ -11,6 +11,8 @@ export const AntiqueShop = () => {
       <ThreeDArtTemplate
         title="The Antique Shop"
         tools={["Maya", "Substance Painter", "Houdini", "Arnold"]}
+        artstationLink="https://www.artstation.com/artwork/ea4WXJ"
+        vimeoLink="https://vimeo.com/492851519"
       >
         <>
           <Vimeo videoID={"492851519"} />

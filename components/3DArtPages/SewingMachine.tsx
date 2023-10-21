@@ -10,6 +10,8 @@ export const SewingMachine = () => {
       <ThreeDArtTemplate
         title="Sewing Machine"
         tools={["Maya", "Substance Painter", "Zbrush", "Arnold"]}
+        artstationLink="https://www.artstation.com/artwork/8e1gRn"
+        vimeoLink="https://vimeo.com/460981218"
       >
         <>
           <Vimeo videoID={"460981218"} />

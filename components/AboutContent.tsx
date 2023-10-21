@@ -33,7 +33,7 @@ export const AboutContent = () => {
             }}
           >
             <Image
-              src={"/about/me.jpg"}
+              src={"/about/me.png"}
               priority
               loader={myLoader}
               alt={"alt"}

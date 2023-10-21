@@ -22,13 +22,11 @@ export const ThreeDContent = () => {
     <>
       <Layout>
         <div className="space-y-4">
-          {/* <Vimeo videoID={"534692300"} /> */}
           <Grid>
             <>
               <Thumbnail
                 src={"/threeDArt/houseofachild/sidebyside.png"}
                 alt={"houseofachild"}
-                // href={"3DArt/HouseOfAChild"}
                 name={"House of a Child"}
                 tools={["Maya", "Substance Painter", "Arnold"]}
               >
@@ -37,7 +35,6 @@ export const ThreeDContent = () => {
               <Thumbnail
                 src={"/threeDArt/antiqueshop/TheAntiqueShopThumbnail.png"}
                 alt={"antiqueshop"}
-                // href={"3DArt/AntiqueShop"}
                 name={"The Antique Shop"}
                 tools={["Maya", "Substance Painter", "Houdini", "Arnold"]}
               >
@@ -46,7 +43,6 @@ export const ThreeDContent = () => {
               <Thumbnail
                 src={"/threeDArt/sewingmachine/sewingmachinethumb.png"}
                 alt={"sewingmachine"}
-                // href={"3DArt/SewingMachine"}
                 name={"Vintage Sewing Machine"}
                 tools={["Maya", "Substance Painter", "Zbrush", "Arnold"]}
               >
@@ -55,7 +51,6 @@ export const ThreeDContent = () => {
               <Thumbnail
                 src={"/threeDArt/lakevillage/ao.jpg"}
                 alt={"lakevillage"}
-                // href={"3DArt/LakeVillage"}
                 name={"Lake Village"}
                 tools={["Maya", "Houdini", "Arnold"]}
               >
@@ -64,7 +59,6 @@ export const ThreeDContent = () => {
               <Thumbnail
                 src={"/threeDArt/fairyhouse/thumbnail.png"}
                 alt={"fairyhouse"}
-                // href={"3DArt/FairyHouse"}
                 name={"Fairy House"}
                 tools={["Maya", "Arnold"]}
               >
@@ -73,7 +67,6 @@ export const ThreeDContent = () => {
               <Thumbnail
                 src={"/threeDArt/snowqueenkitchen/ao.png"}
                 alt={"snowqueenkitchen"}
-                // href={"3DArt/SnowQueenKitchen"}
                 name={"Snow Queen Kitchen"}
                 tools={["Maya", "Arnold"]}
               >
@@ -82,7 +75,6 @@ export const ThreeDContent = () => {
               <Thumbnail
                 src={"/threeDArt/callioujourney/thumbnail.jpg"}
                 alt={"callioujourney"}
-                // href={"3DArt/CalliouJourney"}
                 name={"Calliou's Journey"}
                 tools={["Maya", "Substance Painter", "Arnold"]}
               >
@@ -91,7 +83,6 @@ export const ThreeDContent = () => {
               <Thumbnail
                 src={"/threeDArt/hope/thumbnail.png"}
                 alt={"hope"}
-                // href={"3DArt/Hope"}
                 name={"Hope"}
                 tools={["Maya", "Substance Painter", "Arnold"]}
               >

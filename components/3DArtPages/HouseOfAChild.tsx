@@ -11,6 +11,8 @@ export const HouseOfAChild = () => {
       <ThreeDArtTemplate
         title="House of a Child"
         tools={["Maya", "Substance Painter", "Arnold"]}
+        artstationLink="https://www.artstation.com/artwork/D5lg4R"
+        vimeoLink="https://vimeo.com/535617212"
       >
         <>
           <Vimeo videoID={"535617212"} />
