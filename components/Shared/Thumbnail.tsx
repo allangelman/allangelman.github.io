@@ -36,7 +36,7 @@ export const Thumbnail = ({
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <div
-          className={cn(styles.thumbnail, "relative", {
+          className={cn(styles.thumbnail, "relative bg-slate-100", {
             "opacity-100": imageIsLoaded,
             "opacity-0": !imageIsLoaded,
           })}
@@ -53,21 +53,19 @@ export const Thumbnail = ({
               }}
             />
           </div>
-          <div className="h-20 w-full bg-slate-100 flex items-center justify-center text-black space-y-2 flex-col pb-2">
-            <span className="text-lg font-bold">{name}</span>
-            <div className="space-x-2">
-              <>
-                {tools.map((tool: string) => {
-                  return (
-                    <span
-                      key={tool}
-                      className="text-slate-800 text-xs rounded bg-slate-300/50 p-1"
-                    >
-                      {tool}
-                    </span>
-                  );
-                })}
-              </>
+          <div className="w-full flex space-y-2 my-4 items-center justify-center text-black flex-col">
+            <span className="text-lg font-bold text-center mx-2">{name}</span>
+            <div className="space-x-2 mx-2 flex flex-wrap items-center justify-center">
+              {tools.map((tool: string) => {
+                return (
+                  <span
+                    key={tool}
+                    className="text-slate-800 text-xs rounded bg-slate-300/50 p-2 mb-2"
+                  >
+                    {tool}
+                  </span>
+                );
+              })}
             </div>
           </div>
         </div>

@@ -5,7 +5,15 @@ export const CodeBreaking = () => {
   return (
     <PageTemplate
       title="Code Breaking Game"
-      tools={["TypeScript", "React", "PostgreSQL", "Next.js"]}
+      tools={[
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Next.js",
+        "NestJS",
+        "GraphQL",
+      ]}
       githubLink="https://github.com/allangelman/mastermind"
     >
       <>

@@ -31,16 +31,14 @@ export const PaintingContent = () => {
               }
             />
             <Painting
-              src={"/paintings/push.png"}
-              alt={"push"}
-              label={"Film study from Push (Painted in Photoshop)"}
+              src={"/paintings/sun.png"}
+              alt={"sun"}
+              label={"Film study from Sense8 (Painted in Photoshop)"}
             />
             <Painting
-              src={"/paintings/bentaylor.png"}
-              alt={"bentaylor"}
-              label={
-                "Portraits of Ben Levi Ross and Taylor Trensch (Painted in Photoshop)"
-              }
+              src={"/paintings/meilin.png"}
+              alt={"meilin"}
+              label={"Film study from Turning Red (Painted in Photoshop)"}
             />
             <Painting
               src={"/paintings/natasha.png"}
@@ -61,9 +59,9 @@ export const PaintingContent = () => {
               label={"Film study from Shadow and Bone (Painted in Photoshop)"}
             />
             <Painting
-              src={"/paintings/sun.png"}
-              alt={"sun"}
-              label={"Film study from Sense8 (Painted in Photoshop)"}
+              src={"/paintings/push.png"}
+              alt={"push"}
+              label={"Film study from Push (Painted in Photoshop)"}
             />
             <Painting
               src={"/paintings/inej.png"}
@@ -71,9 +69,11 @@ export const PaintingContent = () => {
               label={"Film study from Shadow and Bone (Painted in Photoshop)"}
             />
             <Painting
-              src={"/paintings/meilin.png"}
-              alt={"meilin"}
-              label={"Film study from Turning Red (Painted in Photoshop)"}
+              src={"/paintings/bentaylor.png"}
+              alt={"bentaylor"}
+              label={
+                "Portraits of Ben Levi Ross and Taylor Trensch (Painted in Photoshop)"
+              }
             />
             <Painting
               src={"/paintings/jesper.png"}

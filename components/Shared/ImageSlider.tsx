@@ -52,14 +52,14 @@ export const ImageSlider = ({
           step={1}
           aria-label="WireframeToColorSlider"
         >
-          <Slider.Track className="bg-black relative flex-grow rounded-full h-1">
+          <Slider.Track className="bg-slate-700 relative flex-grow rounded-full h-1">
             <Slider.Range
-              className={"absolute rounded-full h-full bg-blue-400"}
+              className={"absolute rounded-full h-full bg-slate-400"}
             />
           </Slider.Track>
           <Slider.Thumb
             className={
-              "block w-6 h-6 bg-yellow-500 rounded-full shadow-none focus:outline-none"
+              "block w-6 h-6 bg-slate-300 rounded-full shadow-none focus:outline-none"
             }
           />
         </Slider.Root>
