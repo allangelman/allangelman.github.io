@@ -182,11 +182,6 @@ export const PaintingContent = () => {
         <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
           <div>
             <Painting
-              src={"/paintings/push2.png"}
-              alt={"push2"}
-              label={"Film study from Push (Painted in Procreate)"}
-            />
-            <Painting
               src={"/paintings/claudia.png"}
               alt={"claudia"}
               label={
@@ -212,11 +207,11 @@ export const PaintingContent = () => {
             />
           </div>
           <div>
-            {/* <Painting
-              src={"/paintings/L.png"}
-              alt={"L"}
-              label={"Portrait of a freind (Painted in Photoshop)"}
-            /> */}
+            <Painting
+              src={"/paintings/push2.png"}
+              alt={"push2"}
+              label={"Film study from Push (Painted in Procreate)"}
+            />
             <Painting
               src={"/paintings/kaz.png"}
               alt={"max"}

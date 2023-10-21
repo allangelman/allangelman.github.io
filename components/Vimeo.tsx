@@ -20,7 +20,7 @@ export const Vimeo = ({ videoID }: VimeoProps) => {
       >
         {/* &color=ff0179 */}
         <iframe
-          src={`https://player.vimeo.com/video/${videoID}?h=2efc068be3`}
+          src={`https://player.vimeo.com/video/${videoID}?autoplay=1&loop=1&autopause=0`}
           style={{
             position: "absolute",
             top: 0,

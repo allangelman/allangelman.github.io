@@ -2,23 +2,29 @@
 import { Layout } from "../Layout";
 import { useState } from "react";
 import { Vimeo } from "../Vimeo";
+import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
 
 export const SewingMachine = () => {
   return (
     <>
-      <div className="lg:mx-auto lg:max-w-[850px] flex flex-col items-center space-y-8">
-        <Vimeo videoID={"460981218"} />
-        <div className="space-y-4">
-          <p>
-            {`Modeled in Maya and Zbrush for creating displacement maps. Textured in Substance Painter and Photoshop.
+      <ThreeDArtTemplate
+        title="Sewing Machine"
+        tools={["Maya", "Substance Painter", "Arnold"]}
+      >
+        <>
+          <Vimeo videoID={"460981218"} />
+          <div className="space-y-4">
+            <p>
+              {`Modeled in Maya and Zbrush for creating displacement maps. Textured in Substance Painter and Photoshop.
               Procedurally shaded, lit, and rendered in Arnold.`}
-          </p>
-          <p>
-            {`Modeled in Maya and Zbrush for creating displacement maps. Textured in Substance Painter and Photoshop.
+            </p>
+            <p>
+              {`Modeled in Maya and Zbrush for creating displacement maps. Textured in Substance Painter and Photoshop.
               Procedurally shaded, lit, and rendered in Arnold.`}
-          </p>
-        </div>
-      </div>
+            </p>
+          </div>
+        </>
+      </ThreeDArtTemplate>
     </>
   );
 };

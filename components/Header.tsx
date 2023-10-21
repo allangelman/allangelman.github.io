@@ -10,7 +10,7 @@ export const Header = () => {
 
         <div className="flex flex-wrap justify-center space-x-4">
           <HeaderCategory name={"CODE"} href={"/Coding"} />
-          <HeaderCategory name={"3D"} href={"/3DArt"} />
+          <HeaderCategory name={"3D"} href={"/ThreeDArt"} />
           <HeaderCategory name={"AR"} href={"/AR"} />
           <HeaderCategory name={"PAINTING"} href={"/Painting"} />
           <HeaderCategory name={"FABRIC"} href={"/Sewing"} />
