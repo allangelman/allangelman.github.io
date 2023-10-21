@@ -19,7 +19,7 @@ export const CodingContent = () => {
       <Grid>
         <>
           <Thumbnail
-            src={"/coding/mastermind/mastermindthumbnail.png"}
+            src={"/coding/mastermind/mastermindthumbnail2.png"}
             alt={"mastermind"}
             name={"Code Breaking Game"}
             tools={["TypeScript", "React", "PostgreSQL", "Next.js"]}

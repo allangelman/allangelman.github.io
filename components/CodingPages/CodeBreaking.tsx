@@ -5,7 +5,7 @@ export const CodeBreaking = () => {
   return (
     <CodingTemplate
       title="Code Breaking Game"
-      tools={["TypeScript", "React", "PostgreSQL, Next.js"]}
+      tools={["TypeScript", "React", "PostgreSQL", "Next.js"]}
       githubLink="https://www.artstation.com/artwork/ea4WXJ"
     >
       <>
