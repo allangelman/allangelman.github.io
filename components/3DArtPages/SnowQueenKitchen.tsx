@@ -2,12 +2,12 @@
 import Image from "next/image";
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const SnowQueenKitchen = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="Snow Queen Kitchen"
         tools={["Maya", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/ELDWqA"
@@ -56,7 +56,7 @@ export const SnowQueenKitchen = () => {
             height={450}
           />
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

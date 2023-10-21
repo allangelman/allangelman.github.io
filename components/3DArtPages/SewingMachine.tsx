@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Vimeo } from "../Shared/Vimeo";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const SewingMachine = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="Sewing Machine"
         tools={["Maya", "Substance Painter", "Zbrush", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/8e1gRn"
@@ -24,7 +24,7 @@ export const SewingMachine = () => {
             </p>
           </div>
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

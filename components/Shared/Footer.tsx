@@ -7,7 +7,7 @@ export const Footer = () => {
       <span>
         <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
       </span>
-      <div> ©2022 by Allan Gelman</div>
+      <div> ©2023 by Allan Gelman</div>
     </footer>
   );
 };

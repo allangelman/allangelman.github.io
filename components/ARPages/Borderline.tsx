@@ -1,12 +1,11 @@
 import Image from "next/image";
 import { PageTemplate } from "../Shared/PageTemplate";
 
-export const CodeBreaking = () => {
+export const Borderline = () => {
   return (
     <PageTemplate
-      title="Code Breaking Game"
+      title="The Borderline @ MIT"
       tools={["TypeScript", "React", "PostgreSQL", "Next.js"]}
-      githubLink="https://github.com/allangelman/mastermind"
     >
       <>
         <Image

@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const CalliouJourney = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="Calliou's Journey"
         tools={["Maya", "Substance Painter", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/zOYo64"
@@ -36,7 +36,7 @@ export const CalliouJourney = () => {
             height={450}
           />
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

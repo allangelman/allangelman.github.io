@@ -1,34 +1,15 @@
 import Image from "next/image";
-import { CodingTemplate } from "../CodingTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const Mushroom = () => {
   return (
-    <CodingTemplate
+    <PageTemplate
       title="Procedural Mushroom Tool"
       tools={["Python", "Maya"]}
-      githubLink="https://www.artstation.com/artwork/ea4WXJ"
+      githubLink="https://github.com/allangelman/Mushroom-Generator"
     >
-      <>
-        <Image
-          className="image" //why is this here?
-          src={"/coding/mastermind/mastermindthumbnail.png"}
-          loader={myLoader}
-          alt={"mastermind"}
-          width={850}
-          height={450}
-          objectFit="cover"
-        />
-        <Image
-          className="image" //why is this here?
-          src={"/coding/mastermind/mastermindthumbnail.png"}
-          loader={myLoader}
-          alt={"mastermind"}
-          width={850}
-          height={450}
-          objectFit="cover"
-        />
-      </>
-    </CodingTemplate>
+      <></>
+    </PageTemplate>
   );
 };
 

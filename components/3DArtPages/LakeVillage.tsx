@@ -3,12 +3,12 @@ import Image from "next/image";
 
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const LakeVillage = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="Lake Village"
         tools={["Maya", "Houdini", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/YeEYww"
@@ -64,7 +64,7 @@ export const LakeVillage = () => {
             height={450}
           />
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

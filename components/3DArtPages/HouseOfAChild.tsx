@@ -2,12 +2,12 @@
 import Image from "next/image";
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const HouseOfAChild = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="House of a Child"
         tools={["Maya", "Substance Painter", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/D5lg4R"
@@ -52,7 +52,7 @@ export const HouseOfAChild = () => {
             height={450}
           />
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

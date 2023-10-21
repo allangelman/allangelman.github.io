@@ -115,7 +115,7 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
             // transition: "0.3s",
           }}
         >
-          <div className="w-full h-10 bottom-0 align-baseline absolute bg-transparent transition group-hover:bg-black/60 group-hover:text-white/80 text-transparent flex items-center pl-5">
+          <div className="w-full h-10 bottom-0 font-extralight align-baseline absolute bg-transparent transition group-hover:bg-black/60 group-hover:text-white/80 text-transparent flex items-center pl-5">
             {label}
           </div>
           <div
@@ -163,8 +163,14 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
             />
           </Dialog.Content>
           <Dialog.Close asChild>
-            <button
+            {/* <button
               className="text-black flex h-10 w-10 rounded-full absolute top-[10px] right-[10px] items-center outline-none justify-center"
+              aria-label="Close"
+            >
+              <Cross2Icon />
+            </button> */}
+            <button
+              className="text-white flex h-6 w-6 rounded-full absolute top-[10px] bg-black/40 hover:bg-black/60 right-[10px] items-center outline-none justify-center"
               aria-label="Close"
             >
               <Cross2Icon />

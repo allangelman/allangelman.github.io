@@ -2,12 +2,12 @@
 import Image from "next/image";
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const AntiqueShop = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="The Antique Shop"
         tools={["Maya", "Substance Painter", "Houdini", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/ea4WXJ"
@@ -57,7 +57,7 @@ export const AntiqueShop = () => {
             height={450}
           />
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Image from "next/image";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 import { Vimeo } from "../Shared/Vimeo";
 
 export const FairyHouse = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="Fairy House"
         tools={["Maya", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/L3b965"
@@ -48,7 +48,7 @@ export const FairyHouse = () => {
             height={450}
           />
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

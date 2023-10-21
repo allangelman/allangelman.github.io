@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
-import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const Hope = () => {
   return (
     <>
-      <ThreeDArtTemplate
+      <PageTemplate
         title="Hope"
         tools={["Maya", "Substance Painter", "Arnold"]}
         artstationLink="https://www.artstation.com/artwork/Krwm1G"
@@ -39,7 +39,7 @@ export const Hope = () => {
             height={450}
           />
         </>
-      </ThreeDArtTemplate>
+      </PageTemplate>
     </>
   );
 };

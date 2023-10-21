@@ -2,7 +2,7 @@ import { Layout } from "./Shared/Layout";
 import Image from "next/image";
 import cn from "classnames";
 import { useState } from "react";
-
+// eslint-disable-next-line react/no-unescaped-entities
 interface imageLoaderProps {
   src: string;
   width: number;
@@ -48,7 +48,7 @@ export const AboutContent = () => {
             <div className="max-w-[1/2] flex flex-wrap flex-col space-y-4">
               <h1 className="text-4xl font-bold">Hi there!</h1>
               <p>
-                My name is Allan Gelman. I am an software engineer and artist
+                My name is Allan Gelman. I am a software engineer and artist
                 with passions for web development, AR/VR, and 3D modeling.
               </p>
               <p>
@@ -68,7 +68,7 @@ export const AboutContent = () => {
               <p>
                 Now, I am working as a software engineer apprentice at LinkedIn,
                 diving deeper into my passion for backend engineering on the
-                Infrastructure as Code team!
+                Configurations &ldquo;cfg2&ldquo; team!
               </p>
             </div>
           </div>

@@ -1,34 +1,15 @@
 import Image from "next/image";
-import { CodingTemplate } from "../CodingTemplate";
+import { PageTemplate } from "../Shared/PageTemplate";
 
 export const RayTracer = () => {
   return (
-    <CodingTemplate
+    <PageTemplate
       title="Ray Tracer"
       tools={["C++"]}
-      githubLink="https://www.artstation.com/artwork/ea4WXJ"
+      githubLink="https://github.com/allangelman/ray-tracer"
     >
-      <>
-        <Image
-          className="image" //why is this here?
-          src={"/coding/mastermind/mastermindthumbnail.png"}
-          loader={myLoader}
-          alt={"mastermind"}
-          width={850}
-          height={450}
-          objectFit="cover"
-        />
-        <Image
-          className="image" //why is this here?
-          src={"/coding/mastermind/mastermindthumbnail.png"}
-          loader={myLoader}
-          alt={"mastermind"}
-          width={850}
-          height={450}
-          objectFit="cover"
-        />
-      </>
-    </CodingTemplate>
+      <></>
+    </PageTemplate>
   );
 };
 

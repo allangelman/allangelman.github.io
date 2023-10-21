@@ -7,6 +7,8 @@ import cn from "classnames";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { Thumbnail } from "./Shared/Thumbnail";
 import { Grid } from "./Shared/Grid";
+import { FeltLikeHome } from "./FabricPages/FeltLikeHome";
+import { StitchedTogether } from "./FabricPages/StitchedTogether";
 
 interface imageLoaderProps {
   src: string;
@@ -29,15 +31,7 @@ export const SewingContent = () => {
             name={"Felt like Home"}
             tools={["Felt", "Thread"]}
           >
-            <div>
-              In Fall 2020, my brother Danny Gelman and I, were commisioned by
-              Google (through Art_Works) to create a piece for their new office
-              in Kendall Square, Cambridge, MA. We decided to create a 7 x 6
-              piece in homage to the Galaxy: Earth Sphere Fountain, a fountain
-              we walked by numerous times during college at MIT. This was the
-              second and most ambitious work entirely created out of felt. The
-              process took many months of planning and execution.
-            </div>
+            <FeltLikeHome />
           </Thumbnail>
           <Thumbnail
             src={"/sewing/full_thumbnail.jpg"}
@@ -45,14 +39,10 @@ export const SewingContent = () => {
             name={"Stitched Together"}
             tools={["Felt", "Thread"]}
           >
-            <div>
-              Made in collaboration with Danny Gelman for the OpenMind::OpenArt
-              project at MIT in Spring 2017. Responsible for 1st, 3rd, and 5th
-              portrait (left to right, top to bottom)
-            </div>
+            <StitchedTogether />
           </Thumbnail>
 
-          <Thumbnail
+          {/* <Thumbnail
             src={"/sewing/detail.jpg"}
             alt={"detail"}
             name={"Stitched Together (detail)"}
@@ -62,7 +52,7 @@ export const SewingContent = () => {
               Here is a detail of one of the portraits I was responsible for. As
               you can see, it is made entirely of hand sewn pieces of felt.
             </div>
-          </Thumbnail>
+          </Thumbnail> */}
         </>
       </Grid>
     </Layout>
