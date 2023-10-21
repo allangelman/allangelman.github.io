@@ -42,7 +42,19 @@ export const Footer = () => {
           <Vimeo />
         </a>
       </div>
-      <div> ©2023 by Allan Gelman</div>
+      <div>
+        {""}
+        <a
+          target="_blank"
+          className="text-blue-500 hover:text-blue-700"
+          href="https://github.com/allangelman/allangelman.github.io"
+          rel="noreferrer"
+        >
+          Crafted
+        </a>
+        {" with pixels and code"}
+      </div>
+      <div> ©2023 Allan Gelman</div>
     </footer>
   );
 };
