@@ -1,5 +1,5 @@
-import { Layout } from "./Layout";
-import { Grid } from "./Grid";
+import { Layout } from "./Shared/Layout";
+import { Grid } from "./Shared/Grid";
 
 export const VRARContent = () => {
   return (

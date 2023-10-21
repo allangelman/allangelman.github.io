@@ -1,4 +1,4 @@
-import { Layout } from "./Layout";
+import { Layout } from "./Shared/Layout";
 import Image from "next/image";
 import cn from "classnames";
 import { useState } from "react";

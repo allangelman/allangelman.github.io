@@ -3,7 +3,7 @@ import cn from "classnames";
 import Image from "next/image";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 
 interface imageLoaderProps {
   src: string;

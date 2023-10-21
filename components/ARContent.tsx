@@ -1,8 +1,8 @@
-import { Layout } from "./Layout";
-import { Grid } from "./Grid";
+import { Layout } from "./Shared/Layout";
+import { Grid } from "./Shared/Grid";
 import { HouseOfAChild } from "./3DArtPages/HouseOfAChild";
 import { AntiqueShop } from "./3DArtPages/AntiqueShop";
-import { Thumbnail } from "./Thumbnail";
+import { Thumbnail } from "./Shared/Thumbnail";
 
 export const ARContent = () => {
   return (

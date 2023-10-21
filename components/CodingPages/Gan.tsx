@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { CodingTemplate } from "../CodingTemplate";
 
-export const CodeBreaking = () => {
+export const Gan = () => {
   return (
     <CodingTemplate
-      title="Code Breaking Game"
-      tools={["TypeScript", "React", "PostgreSQL, Next.js"]}
+      title="Gan XML Fixer"
+      tools={["Python", "Tensorflow", "CoLab"]}
       githubLink="https://www.artstation.com/artwork/ea4WXJ"
     >
       <>

@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Image from "next/image";
-import { Layout } from "../Layout";
 import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
-import { Vimeo } from "../Vimeo";
+import { Vimeo } from "../Shared/Vimeo";
 
 export const FairyHouse = () => {
   return (

@@ -1,5 +1,5 @@
-import { Layout } from "./Layout";
-import { Grid } from "./Grid";
+import { Layout } from "./Shared/Layout";
+import { Grid } from "./Shared/Grid";
 import { useState, ReactElement } from "react";
 import cn from "classnames";
 import Image from "next/image";
@@ -7,7 +7,11 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import styles from "../styles/Home.module.css";
 import { CodeBreaking } from "./CodingPages/CodeBreaking";
-import { Thumbnail } from "./Thumbnail";
+import { Thumbnail } from "./Shared/Thumbnail";
+import { RayTracer } from "./CodingPages/RayTracer";
+import { Lamp } from "./CodingPages/Lamp";
+import { Mushroom } from "./CodingPages/Mushroom";
+import { Gan } from "./CodingPages/Gan";
 
 export const CodingContent = () => {
   return (
@@ -18,18 +22,25 @@ export const CodingContent = () => {
             src={"/coding/mastermind/mastermindthumbnail.png"}
             alt={"mastermind"}
             name={"Code Breaking Game"}
-            tools={["TypeScript", "React", "PostgreSQL"]}
+            tools={["TypeScript", "React", "PostgreSQL", "Next.js"]}
           >
             <CodeBreaking />
           </Thumbnail>
-
           <Thumbnail
             src={"/coding/raytracer/raytracerthumbnail.png"}
             alt={"raytracer"}
             name={"Ray Tracer with OBJ Loading"}
             tools={["C++"]}
           >
-            <></>
+            <RayTracer />
+          </Thumbnail>
+          <Thumbnail
+            src={"/coding/ganxmlfixer/gan.png"}
+            alt={"ganxmlfixer"}
+            name={"GAN XML Fixer"}
+            tools={["Python", "Tensorflow", "CoLab"]}
+          >
+            <Gan />
           </Thumbnail>
           <Thumbnail
             src={"/coding/strawlamptool/lamp.png"}
@@ -37,15 +48,7 @@ export const CodingContent = () => {
             name={"Procedural Straw Lamp Tool"}
             tools={["Houdini", "VEX"]}
           >
-            <></>
-          </Thumbnail>
-          <Thumbnail
-            src={"/coding/ganxmlfixer/gan.png"}
-            alt={"ganxmlfixer"}
-            name={"GAN XML Fixer"}
-            tools={["Python"]}
-          >
-            <></>
+            <Lamp />
           </Thumbnail>
           <Thumbnail
             src={"/coding/mushroomtool/mush.png"}
@@ -53,7 +56,7 @@ export const CodingContent = () => {
             name={"Procedural Mushroom Tool"}
             tools={["Python", "Maya"]}
           >
-            <></>
+            <Mushroom />
           </Thumbnail>
         </>
       </Grid>

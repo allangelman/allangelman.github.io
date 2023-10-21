@@ -1,9 +1,9 @@
-import { Layout } from "./Layout";
-import { Grid } from "./Grid";
+import { Layout } from "./Shared/Layout";
+import { Grid } from "./Shared/Grid";
 import { ReactElement, useState } from "react";
 import cn from "classnames";
 import Image from "next/image";
-import { Vimeo } from "./Vimeo";
+import { Vimeo } from "./Shared/Vimeo";
 import * as Dialog from "@radix-ui/react-dialog";
 import styles from "../styles/Home.module.css";
 import { Cross2Icon } from "@radix-ui/react-icons";
@@ -15,7 +15,7 @@ import { FairyHouse } from "./3DArtPages/FairyHouse";
 import { SnowQueenKitchen } from "./3DArtPages/SnowQueenKitchen";
 import { CalliouJourney } from "./3DArtPages/CalliouJourney";
 import { Hope } from "./3DArtPages/Hope";
-import { Thumbnail } from "./Thumbnail";
+import { Thumbnail } from "./Shared/Thumbnail";
 
 export const ThreeDContent = () => {
   return (

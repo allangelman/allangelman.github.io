@@ -1,22 +1,19 @@
 import { ReactElement } from "react";
 import Artstation from "./icons/artstation";
-import Vimeo from "./icons/vimeo";
 
-interface ThreeDArtTemplateProps {
+interface CodingTemplateProps {
   title: string;
   children: ReactElement;
   tools: string[];
-  artstationLink: string;
-  vimeoLink: string;
+  githubLink: string;
 }
 
-export const ThreeDArtTemplate = ({
+export const CodingTemplate = ({
   title,
   children,
   tools,
-  artstationLink,
-  vimeoLink,
-}: ThreeDArtTemplateProps) => {
+  githubLink,
+}: CodingTemplateProps) => {
   return (
     <div className="lg:mx-auto lg:max-w-[850px] flex flex-col">
       <div className="text-3xl flex flex-col font-extralight bg-slate-100 w-full h-full items-center space-y-4 py-4 pl-5">
@@ -39,18 +36,10 @@ export const ThreeDArtTemplate = ({
           <a
             className="text-slate-500  hover:text-slate-800"
             target="_blank"
-            href={artstationLink}
+            href={githubLink}
             rel="noreferrer"
           >
             <Artstation />
-          </a>
-          <a
-            className="text-slate-500  hover:text-slate-800"
-            target="_blank"
-            href={vimeoLink}
-            rel="noreferrer"
-          >
-            <Vimeo />
           </a>
         </div>
       </div>

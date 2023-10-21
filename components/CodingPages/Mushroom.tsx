@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { CodingTemplate } from "../CodingTemplate";
 
-export const CodeBreaking = () => {
+export const Mushroom = () => {
   return (
     <CodingTemplate
-      title="Code Breaking Game"
-      tools={["TypeScript", "React", "PostgreSQL, Next.js"]}
+      title="Procedural Mushroom Tool"
+      tools={["Python", "Maya"]}
       githubLink="https://www.artstation.com/artwork/ea4WXJ"
     >
       <>

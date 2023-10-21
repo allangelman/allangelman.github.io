@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { Layout } from "../Layout";
-import { useState } from "react";
-import { Vimeo } from "../Vimeo";
+import { Vimeo } from "../Shared/Vimeo";
 import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
 
 export const SewingMachine = () => {

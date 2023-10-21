@@ -1,14 +1,10 @@
-import { Layout } from "./Layout";
+import { Layout } from "./Shared/Layout";
 import Image from "next/image";
 import * as Dialog from "@radix-ui/react-dialog";
 
 import { useState } from "react";
 import cn from "classnames";
 import { Cross2Icon } from "@radix-ui/react-icons";
-import { Grid } from "./Grid";
-import { Thumbnail } from "./Thumbnail";
-import { HouseOfAChild } from "./3DArtPages/HouseOfAChild";
-import { ThumbnailNoLabel } from "./ThumbnailNoLabel";
 import styles from "../styles/Home.module.css";
 
 interface imageLoaderProps {
@@ -24,161 +20,7 @@ const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
 export const PaintingContent = () => {
   return (
     <Layout>
-      {/* <Grid>
-        <>
-          <ThumbnailNoLabel
-            src={"/paintings/kaz.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/inej.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/jesper.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/sun.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/claudia.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/push.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/meilin.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/bentaylor.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/natasha.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/kalamax.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/L.png"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-          <ThumbnailNoLabel
-            src={"/paintings/Pavement.jpg"}
-            alt={"houseofachild"}
-            // href={"3DArt/HouseOfAChild"}
-            name={"Film Study"}
-            tools={"Photoshop"}
-          >
-            <HouseOfAChild />
-          </ThumbnailNoLabel>
-        </>
-      </Grid> */}
       <>
-        {/* <div className="grid gap-4 grid-col-1 sm:grid-cols-1">
-          <div>
-            <Painting
-              src={"/paintings/kaz.png"}
-              alt={"max"}
-              priority
-              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
-            />
-            <Painting
-              src={"/paintings/inej.png"}
-              alt={"inej"}
-              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
-            />
-            <Painting
-              src={"/paintings/jesper.png"}
-              alt={"jesper"}
-              label={"Film study from Shadow and Bone (Painted in Photoshop)"}
-            />
-            <Painting
-              src={"/paintings/sun.png"}
-              alt={"sun"}
-              label={"Film study from Sense8 (Painted in Photoshop)"}
-            />
-            <Painting
-              src={"/paintings/claudia.png"}
-              alt={"claudia"}
-              label={
-                "Film study from Interview with the Vampire (Painted in Photoshop)"
-              }
-            />
-            <Painting
-              src={"/paintings/push.png"}
-              alt={"push"}
-              label={"Film study from Push (Painted in Photoshop)"}
-            />
-            <Painting
-              src={"/paintings/meilin.png"}
-              alt={"meilin"}
-              label={"Film study from Turning Red (Painted in Photoshop)"}
-            />
-          </div>
-        </div> */}
         <div className="grid gap-4 grid-col-1 sm:grid-cols-2">
           <div>
             <Painting

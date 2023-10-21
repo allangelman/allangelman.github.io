@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { CodingTemplate } from "../CodingTemplate";
 
-export const CodeBreaking = () => {
+export const Lamp = () => {
   return (
     <CodingTemplate
-      title="Code Breaking Game"
-      tools={["TypeScript", "React", "PostgreSQL, Next.js"]}
+      title="Procedural Straw Lamp Tool"
+      tools={["Houdini", "VEX"]}
       githubLink="https://www.artstation.com/artwork/ea4WXJ"
     >
       <>

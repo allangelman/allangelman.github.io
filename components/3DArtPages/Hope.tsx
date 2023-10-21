@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { Layout } from "../Layout";
-import { ImageSlider } from "../ImageSlider";
-import { Vimeo } from "../Vimeo";
+import { ImageSlider } from "../Shared/ImageSlider";
+import { Vimeo } from "../Shared/Vimeo";
 import { ThreeDArtTemplate } from "../ThreeDArtTemplate";
 
 export const Hope = () => {
