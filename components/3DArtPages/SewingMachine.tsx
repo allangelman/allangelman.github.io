@@ -9,7 +9,7 @@ export const SewingMachine = () => {
     <>
       <ThreeDArtTemplate
         title="Sewing Machine"
-        tools={["Maya", "Substance Painter", "Arnold"]}
+        tools={["Maya", "Substance Painter", "Zbrush", "Arnold"]}
       >
         <>
           <Vimeo videoID={"460981218"} />

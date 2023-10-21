@@ -27,6 +27,8 @@
 - x bigger in modals?
 - maybe nothing needs to be its own page, but can rather be modal that slides in?
 - coding section should just have summaries and link to github mainly?
+- consistency for x button between pages and painting page
+- consistency with heading boldness/thinness
 - idea: make consistent thumnails across all sections. And make it look like the whole site is on one page, when you click on the headings, you stay on the same page but the thumbnails get swapped out to different ones with a cool css animation
 
 ---

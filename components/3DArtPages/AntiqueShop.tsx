@@ -10,7 +10,7 @@ export const AntiqueShop = () => {
     <>
       <ThreeDArtTemplate
         title="The Antique Shop"
-        tools={["Maya", "Substance Painter", "Arnold"]}
+        tools={["Maya", "Substance Painter", "Houdini", "Arnold"]}
       >
         <>
           <Vimeo videoID={"492851519"} />

@@ -11,7 +11,7 @@ export const LakeVillage = () => {
     <>
       <ThreeDArtTemplate
         title="Lake Village"
-        tools={["Maya", "Substance Painter", "Arnold"]}
+        tools={["Maya", "Houdini", "Arnold"]}
       >
         <>
           <ImageSlider

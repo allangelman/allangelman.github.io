@@ -7,10 +7,7 @@ import { Vimeo } from "../Vimeo";
 export const FairyHouse = () => {
   return (
     <>
-      <ThreeDArtTemplate
-        title="Fairy House"
-        tools={["Maya", "Substance Painter", "Arnold"]}
-      >
+      <ThreeDArtTemplate title="Fairy House" tools={["Maya", "Arnold"]}>
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Image

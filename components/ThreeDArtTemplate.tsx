@@ -31,6 +31,14 @@ export const ThreeDArtTemplate = ({
             })}
           </>
         </div>
+        <span>
+          <Image
+            src="/artstation.svg"
+            alt="artstation"
+            width={72}
+            height={16}
+          />
+        </span>
       </div>
       <div className="p-8 space-y-8 items-center flex flex-col">{children}</div>
     </div>
