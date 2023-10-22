@@ -10,7 +10,11 @@ export const AboutContent = () => {
     <>
       <PageTemplate
         title="Hi there, I'm Allan"
-        tools={["allangelman4@gmail.com", "305-934-7829"]}
+        tools={["allangelman4@gmail.com"]}
+        githubLink="https://github.com/allangelman"
+        artstationLink="https://www.artstation.com/allangelman"
+        vimeoLink="https://vimeo.com/user94929753"
+        linkedinLink="https://www.linkedin.com/in/allangelman/"
       >
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">

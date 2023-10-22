@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 import Artstation from "../icons/artstation";
 import Github from "../icons/github";
 import Globe from "../icons/globe";
+import Linkedin from "../icons/linkedin";
 import Vimeo from "../icons/vimeo";
 
 interface PageTemplateProps {
@@ -12,6 +13,7 @@ interface PageTemplateProps {
   vimeoLink?: string;
   githubLink?: string;
   globeLink?: string;
+  linkedinLink?: string;
 }
 
 export const PageTemplate = ({
@@ -22,6 +24,7 @@ export const PageTemplate = ({
   vimeoLink,
   githubLink,
   globeLink,
+  linkedinLink,
 }: PageTemplateProps) => {
   return (
     <div>
@@ -42,6 +45,26 @@ export const PageTemplate = ({
           </>
         </div>
         <div className="flex flex-row space-x-2">
+          {githubLink && (
+            <a
+              className="text-slate-500  hover:text-slate-800"
+              target="_blank"
+              href={githubLink}
+              rel="noreferrer"
+            >
+              <Github />
+            </a>
+          )}
+          {linkedinLink && (
+            <a
+              className="text-slate-500  hover:text-slate-800"
+              target="_blank"
+              href={linkedinLink}
+              rel="noreferrer"
+            >
+              <Linkedin />
+            </a>
+          )}
           {artstationLink && (
             <a
               className="text-slate-500  hover:text-slate-800"
@@ -60,16 +83,6 @@ export const PageTemplate = ({
               rel="noreferrer"
             >
               <Vimeo />
-            </a>
-          )}
-          {githubLink && (
-            <a
-              className="text-slate-500  hover:text-slate-800"
-              target="_blank"
-              href={githubLink}
-              rel="noreferrer"
-            >
-              <Github />
             </a>
           )}
           {globeLink && (

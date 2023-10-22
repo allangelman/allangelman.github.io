@@ -38,7 +38,6 @@ export const Header = () => {
                     "fixed top-1/2 left-1/2 transform bg-white overflow-y-scroll -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[55vw] h-[93vh] max-w-[90vw] md:max-w-[55vw] max-h-[93vh] outline-none rounded-lg"
                   )}
                 >
-                  <></>
                   <AboutContent />
                   <Dialog.Close asChild>
                     <button
