@@ -22,7 +22,7 @@ export const CodingContent = () => {
             src={"/coding/mastermind/mastermindthumbnail2.png"}
             alt={"mastermind"}
             name={"Code Breaking Game"}
-            tools={["TypeScript", "React", "PostgreSQL", "Next.js", "NestJS"]}
+            tools={["TypeScript", "React", "PostgreSQL", "Next.js", "GraphQL"]}
           >
             <CodeBreaking />
           </Thumbnail>

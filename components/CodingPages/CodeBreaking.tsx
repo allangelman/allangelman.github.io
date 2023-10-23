@@ -8,7 +8,7 @@ export const CodeBreaking = () => {
       tools={[
         "TypeScript",
         "React",
-        "Tailwind CSS",
+        "Tailwind",
         "PostgreSQL",
         "Next.js",
         "NestJS",
