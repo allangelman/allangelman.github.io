@@ -1,4 +1,4 @@
-## To Do
+<!-- ## To Do
 
 - coding projects content
 - immersive section content
@@ -45,4 +45,4 @@
 - make thumbnail/renders for houdini lamp
 - make scene for mushroom project
 - create/add new ar project?
-- add three.js project?
+- add three.js project? -->

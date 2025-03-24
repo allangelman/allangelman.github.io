@@ -8,18 +8,12 @@ export const Google = () => {
       tools={["Photoshop", "Artivive"]}
     >
       <>
+        <span className="text-left">
+          {` After graduating, I had the oppurtunity to work on an AR commision project for Google with fellow MIT alumns Danny Gelman and Julia Rue. We created a 6' x 7' piece entirely created from felt, depicting a scene from Kendall Square in Cambridge, MA. Here is a gif of its accompanying animation.`}
+        </span>
         <Image
-          className="image" //why is this here?
-          src={"/coding/mastermind/mastermindthumbnail2.png"}
-          loader={myLoader}
-          alt={"mastermind"}
-          width={850}
-          height={450}
-          objectFit="cover"
-        />
-        <Image
-          className="image" //why is this here?
-          src={"/coding/mastermind/mastermindthumbnail2.png"}
+          className="image"
+          src={"/coding/AR/ar.gif"}
           loader={myLoader}
           alt={"mastermind"}
           width={850}

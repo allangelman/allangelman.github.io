@@ -18,7 +18,7 @@ export const Header = () => {
           <HeaderCategory name={"3D"} href={"/ThreeDArt"} />
           <HeaderCategory name={"AR"} href={"/AR"} />
           <HeaderCategory name={"PAINTING"} href={"/Painting"} />
-          <HeaderCategory name={"FABRIC"} href={"/Sewing"} />
+          {/* <HeaderCategory name={"FABRIC"} href={"/Sewing"} /> */}
           <Dialog.Root>
             <Dialog.Trigger asChild>
               <div className="text-lg font-extralight whitespace-nowrap text-slate-900 hover:text-slate-500">

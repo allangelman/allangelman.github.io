@@ -57,7 +57,7 @@ export const Footer = () => {
         </a>
         {" with pixels and code 🤖"}
       </div>
-      <div> ©2023 Allan Gelman</div>
+      <div> ©2025 Allan Gelman</div>
     </footer>
   );
 };

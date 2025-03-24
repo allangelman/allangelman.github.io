@@ -12,6 +12,7 @@ import { RayTracer } from "./CodingPages/RayTracer";
 import { Lamp } from "./CodingPages/Lamp";
 import { Mushroom } from "./CodingPages/Mushroom";
 import { Gan } from "./CodingPages/Gan";
+import { Portfolio } from "./CodingPages/Portfolio";
 
 export const CodingContent = () => {
   return (
@@ -41,6 +42,14 @@ export const CodingContent = () => {
             tools={["Python", "Tensorflow", "Colab"]}
           >
             <Gan />
+          </Thumbnail>
+          <Thumbnail
+            src={"/coding/portfolio/portfolio.png"}
+            alt={"portfolio"}
+            name={"Portfolio"}
+            tools={["TypeScript", "React", "Next.js"]}
+          >
+            <Portfolio />
           </Thumbnail>
           <Thumbnail
             src={"/coding/strawlamptool/lamp.png"}
