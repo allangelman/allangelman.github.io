@@ -99,7 +99,7 @@ export const AboutContent = () => {
                 2023 - Present
               </a>
               {
-                " I am a software engineer at LinkedIn, currently helping build out the CI / CD for the new kuberenets stack, which all deployables at Linkedin are moving to."
+                " I am a software engineer at LinkedIn, currently helping build out the CI / CD for the new kubernetes stack, which all deployables at Linkedin are moving to."
               }
             </p>
           </div>

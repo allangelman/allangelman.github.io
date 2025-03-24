@@ -24,14 +24,12 @@ export const Mushroom = () => {
           </a>
           {` on my github for code.`}
         </span>
-        <Image
+        <img
           className="image"
-          src={"/coding/mushroomtool/mushroom.gif"}
-          loader={myLoader}
-          alt={"gan"}
+          src="/coding/mushroomtool/mushroom.gif"
+          alt="gan"
           width={850}
           height={450}
-          objectFit="cover"
         />
       </>
     </PageTemplate>
