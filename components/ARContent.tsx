@@ -3,6 +3,7 @@ import { Grid } from "./Shared/Grid";
 import { Thumbnail } from "./Shared/Thumbnail";
 import { Borderline } from "./ARPages/Borderline";
 import { Google } from "./ARPages/Google";
+import { VRProject } from "./ARPages/VRProject";
 
 export const ARContent = () => {
   return (
@@ -32,6 +33,14 @@ export const ARContent = () => {
                 tools={["Photoshop", "Artivive"]}
               >
                 <Google />
+              </Thumbnail>
+              <Thumbnail
+                src={"/AR/google.png"}
+                alt={"Coral Reef VR Project"}
+                name={"Coral Reef VR Expereince"}
+                tools={["Python", "Maya", "Unity", "C#"]}
+              >
+                <VRProject />
               </Thumbnail>
             </>
           </Grid>
