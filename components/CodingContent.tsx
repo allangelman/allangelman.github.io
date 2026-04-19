@@ -12,6 +12,7 @@ import { RayTracer } from "./CodingPages/RayTracer";
 import { Lamp } from "./CodingPages/Lamp";
 import { Mushroom } from "./CodingPages/Mushroom";
 import { Gan } from "./CodingPages/Gan";
+import { UMSurfaceProject } from "./CodingPages/UMSurfaceProject";
 import { Portfolio } from "./CodingPages/Portfolio";
 
 export const CodingContent = () => {
@@ -42,6 +43,16 @@ export const CodingContent = () => {
             tools={["Python", "Tensorflow", "Colab"]}
           >
             <Gan />
+          </Thumbnail>
+          <Thumbnail
+            src={"/coding/surface/surfacethumb.png"}
+            alt={"umsurfaceproject"}
+            name={
+              "3D Visualization of Algebraic Surfaces (University of Miami)"
+            }
+            tools={["C++", "OpenGL", "CUDA"]}
+          >
+            <UMSurfaceProject />
           </Thumbnail>
           <Thumbnail
             src={"/coding/portfolio/portfolio.png"}
