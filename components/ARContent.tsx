@@ -35,7 +35,7 @@ export const ARContent = () => {
                 <Google />
               </Thumbnail>
               <Thumbnail
-                src={"/AR/google.png"}
+                src={"/AR/VRthumb.png"}
                 alt={"Coral Reef VR Project"}
                 name={"Coral Reef VR Expereince"}
                 tools={["Python", "Maya", "Unity", "C#"]}
