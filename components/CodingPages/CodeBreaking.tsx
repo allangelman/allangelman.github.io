@@ -18,7 +18,7 @@ export const CodeBreaking = () => {
     >
       <>
         <span>
-          {`This was a project I worked on to get accepted to the Linkedin REACH engineering apprenticeship program! To learn how I build it, please refer to the detailed `}
+          {`This was a project I worked on to get accepted to the LinkedIn REACH engineering apprenticeship program! To learn how I built it, please refer to the detailed `}
           <a
             target="_blank"
             className="text-blue-500 hover:text-blue-700"
@@ -27,7 +27,7 @@ export const CodeBreaking = () => {
           >
             readme
           </a>
-          {` on my github.`}
+          {` on my GitHub.`}
         </span>
         <span className="text-left">
           {`To play, please visit this link:`}{" "}

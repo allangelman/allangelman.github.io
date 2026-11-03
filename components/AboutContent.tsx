@@ -47,7 +47,7 @@ export const AboutContent = () => {
               <div className="max-w-[1/2] flex flex-wrap flex-col space-y-4">
                 <p>
                   {
-                    " I am a software engineer at LinkedIn and a lifelong artist with passions for painting, AR/VR, 3D modeling, and web development."
+                    " I am a software engineer and a lifelong artist with passions for painting, AR/VR, 3D modeling, and web development."
                   }
                 </p>
                 <p>
@@ -73,9 +73,9 @@ export const AboutContent = () => {
               }
             </p>
             <p>
-              <span className="text-slate-400 font-bold">2023 - Present</span>
+              <span className="text-slate-400 font-bold">2023 - 2026</span>
               {
-                " I am a software engineer at LinkedIn, currently helping build out the CI / CD for the new kubernetes stack, which all deployables at Linkedin are moving to."
+                " I worked as a software engineer at LinkedIn, where I helped build out the CI/CD for the new Kubernetes stack that all deployables at LinkedIn were moving to."
               }
             </p>
           </div>
