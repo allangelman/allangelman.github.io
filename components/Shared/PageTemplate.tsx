@@ -50,6 +50,7 @@ export const PageTemplate = ({
               className="text-slate-500  hover:text-slate-800"
               target="_blank"
               href={githubLink}
+              aria-label="GitHub"
               rel="noreferrer"
             >
               <Github />
@@ -60,6 +61,7 @@ export const PageTemplate = ({
               className="text-slate-500  hover:text-slate-800"
               target="_blank"
               href={linkedinLink}
+              aria-label="LinkedIn"
               rel="noreferrer"
             >
               <Linkedin />
@@ -70,6 +72,7 @@ export const PageTemplate = ({
               className="text-slate-500  hover:text-slate-800"
               target="_blank"
               href={artstationLink}
+              aria-label="ArtStation"
               rel="noreferrer"
             >
               <Artstation />
@@ -80,6 +83,7 @@ export const PageTemplate = ({
               className="text-slate-500  hover:text-slate-800"
               target="_blank"
               href={vimeoLink}
+              aria-label="Vimeo"
               rel="noreferrer"
             >
               <Vimeo />
@@ -90,6 +94,7 @@ export const PageTemplate = ({
               className="text-slate-500  hover:text-slate-800"
               target="_blank"
               href={globeLink}
+              aria-label="Website"
               rel="noreferrer"
             >
               <Globe />

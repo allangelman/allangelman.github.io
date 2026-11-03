@@ -12,7 +12,7 @@ interface imageLoaderProps {
 }
 
 const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
+  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };
 
 interface ThumbnailProps {
@@ -35,11 +35,16 @@ export const Thumbnail = ({
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <div
-          className={cn(styles.thumbnail, "relative bg-slate-100", {
-            "opacity-100": imageIsLoaded,
-            "opacity-0": !imageIsLoaded,
-          })}
+        <button
+          type="button"
+          className={cn(
+            styles.thumbnail,
+            "relative block w-full bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-800",
+            {
+              "opacity-100": imageIsLoaded,
+              "opacity-0": !imageIsLoaded,
+            }
+          )}
         >
           <div className="aspect-5/3 relative">
             <Image
@@ -68,7 +73,7 @@ export const Thumbnail = ({
               })}
             </div>
           </div>
-        </div>
+        </button>
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay

@@ -21,9 +21,12 @@ export const Header = () => {
           {/* <HeaderCategory name={"FABRIC"} href={"/Sewing"} /> */}
           <Dialog.Root>
             <Dialog.Trigger asChild>
-              <div className="text-lg font-extralight whitespace-nowrap text-slate-900 hover:text-slate-500">
+              <button
+                type="button"
+                className="text-lg font-extralight whitespace-nowrap text-slate-900 hover:text-slate-500"
+              >
                 {"ABOUT"}
-              </div>
+              </button>
             </Dialog.Trigger>
             <Dialog.Portal>
               <Dialog.Overlay

@@ -35,7 +35,7 @@ export const AboutContent = () => {
                 src={"/about/me.png"}
                 priority
                 loader={myLoader}
-                alt={"alt"}
+                alt={"Allan Gelman"}
                 width={1000}
                 height={1000}
                 onLoad={() => {
@@ -51,25 +51,13 @@ export const AboutContent = () => {
                   }
                 </p>
                 <p>
-                  <a
-                    target="_blank"
-                    className="text-slate-400 font-bold"
-                    rel="noreferrer"
-                  >
-                    2016 - 2020
-                  </a>
+                  <span className="text-slate-400 font-bold">2016 - 2020</span>
                   {
                     " I graduated from MIT with a degree in Humanities and Engineering. My major combined Comparative Media Studies and Computer Science, with a focus on Computer Graphics and storytelling."
                   }
                 </p>
                 <p>
-                  <a
-                    target="_blank"
-                    className="text-slate-400 font-bold"
-                    rel="noreferrer"
-                  >
-                    2020 - 2021
-                  </a>
+                  <span className="text-slate-400 font-bold">2020 - 2021</span>
                   {
                     " I spent a year developing my 3D modeling skills through courses at the vocational online art school CGMA (Computer Graphics Master Academy)"
                   }
@@ -79,25 +67,13 @@ export const AboutContent = () => {
           </div>
           <div className="max-w-[1/2] flex flex-wrap flex-col space-y-4">
             <p>
-              <a
-                target="_blank"
-                className="text-slate-400 font-bold"
-                rel="noreferrer"
-              >
-                2021 - 2023
-              </a>
+              <span className="text-slate-400 font-bold">2021 - 2023</span>
               {
-                " I worked as a software engineer at Clay, a startup building a web application for 3D modeling collaboration. At Clay, I was able combine my artistic and technical passions while learning web development!"
+                " I worked as a software engineer at Clay, a startup building a web application for 3D modeling collaboration. At Clay, I was able to combine my artistic and technical passions while learning web development!"
               }
             </p>
             <p>
-              <a
-                target="_blank"
-                className="text-slate-400 font-bold"
-                rel="noreferrer"
-              >
-                2023 - Present
-              </a>
+              <span className="text-slate-400 font-bold">2023 - Present</span>
               {
                 " I am a software engineer at LinkedIn, currently helping build out the CI / CD for the new kubernetes stack, which all deployables at Linkedin are moving to."
               }
@@ -116,5 +92,5 @@ interface imageLoaderProps {
 }
 
 const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
+  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

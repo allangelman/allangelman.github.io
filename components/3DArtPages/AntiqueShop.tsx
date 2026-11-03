@@ -69,5 +69,5 @@ interface imageLoaderProps {
 }
 
 const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
+  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };
