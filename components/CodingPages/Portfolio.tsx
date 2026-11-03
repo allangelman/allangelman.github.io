@@ -5,12 +5,12 @@ export const Portfolio = () => {
   return (
     <PageTemplate
       title="Portfolio"
-      tools={["Python", "Tensorflow", "CoLab"]}
+      tools={["TypeScript", "React", "Next.js"]}
       githubLink="https://github.com/allangelman/allangelman.github.io"
     >
       <>
         <span>
-          {`I created this portfolio site using React, Typescript, and the Next.js framework, and it is hosted on githube pages! Have fun poking around my site and feel free to check out the code in the `}
+          {`I created this portfolio site using React, TypeScript, and the Next.js framework, and it is hosted on GitHub Pages! Have fun poking around my site and feel free to check out the code in the `}
           <a
             target="_blank"
             className="text-blue-500 hover:text-blue-700"
@@ -19,7 +19,7 @@ export const Portfolio = () => {
           >
             repo
           </a>
-          {` on my github.`}
+          {` on my GitHub.`}
         </span>
         <Image
           className="image"
@@ -42,5 +42,5 @@ interface imageLoaderProps {
 }
 
 const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
+  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

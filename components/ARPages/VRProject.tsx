@@ -5,7 +5,7 @@ import { YouTube } from "../Shared/Youtube";
 export const VRProject = () => {
   return (
     <PageTemplate
-      title="Coral Reef VR Expereince"
+      title="Coral Reef VR Experience"
       tools={["Python", "Maya", "Unity", "C#"]}
     >
       <>
@@ -33,5 +33,5 @@ interface imageLoaderProps {
 }
 
 const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
+  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

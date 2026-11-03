@@ -16,6 +16,7 @@ export const Footer = () => {
           className="text-slate-500  hover:text-slate-800"
           target="_blank"
           href="https://github.com/allangelman"
+          aria-label="GitHub"
           rel="noreferrer"
         >
           <Github />
@@ -24,6 +25,7 @@ export const Footer = () => {
           className="text-slate-500  hover:text-slate-800"
           target="_blank"
           href="https://www.linkedin.com/in/allangelman/"
+          aria-label="LinkedIn"
           rel="noreferrer"
         >
           <Linkedin />
@@ -32,6 +34,7 @@ export const Footer = () => {
           className="text-slate-500  hover:text-slate-800"
           target="_blank"
           href="https://www.artstation.com/allangelman"
+          aria-label="ArtStation"
           rel="noreferrer"
         >
           <Artstation />
@@ -40,6 +43,7 @@ export const Footer = () => {
           className="text-slate-500  hover:text-slate-800"
           target="_blank"
           href="https://vimeo.com/user94929753"
+          aria-label="Vimeo"
           rel="noreferrer"
         >
           <Vimeo />
@@ -57,7 +61,7 @@ export const Footer = () => {
         </a>
         {" with pixels and code 🤖"}
       </div>
-      <div> ©2025 Allan Gelman</div>
+      <div>©{new Date().getFullYear()} Allan Gelman</div>
     </footer>
   );
 };

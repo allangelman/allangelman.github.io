@@ -28,8 +28,8 @@ export const ARContent = () => {
               </Thumbnail>
               <Thumbnail
                 src={"/AR/google.png"}
-                alt={"AR Murals Google Comission"}
-                name={"AR Murals Google Comission"}
+                alt={"AR Murals Google Commission"}
+                name={"AR Murals Google Commission"}
                 tools={["Photoshop", "Artivive"]}
               >
                 <Google />
@@ -37,7 +37,7 @@ export const ARContent = () => {
               <Thumbnail
                 src={"/AR/VRthumb.png"}
                 alt={"Coral Reef VR Project"}
-                name={"Coral Reef VR Expereince"}
+                name={"Coral Reef VR Experience"}
                 tools={["Python", "Maya", "Unity", "C#"]}
               >
                 <VRProject />
@@ -57,5 +57,5 @@ interface imageLoaderProps {
 }
 
 const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?=${width}&q=${quality || 75}`;
+  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };
