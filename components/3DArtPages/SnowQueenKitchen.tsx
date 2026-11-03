@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
 import { PageTemplate } from "../Shared/PageTemplate";
+import { imgixLoader } from "../Shared/imgixLoader";
 
 export const SnowQueenKitchen = () => {
   return (
@@ -35,7 +36,7 @@ export const SnowQueenKitchen = () => {
             width={850}
             height={450}
             objectFit="cover"
-            loader={myLoader}
+            loader={imgixLoader}
           />
           <Image
             src="/threeDArt/snowqueenkitchen/closeup2.png"
@@ -43,7 +44,7 @@ export const SnowQueenKitchen = () => {
             width={850}
             height={450}
             objectFit="cover"
-            loader={myLoader}
+            loader={imgixLoader}
           />
           <Vimeo videoID={"512402836"} />
           <span>
@@ -59,14 +60,4 @@ export const SnowQueenKitchen = () => {
       </PageTemplate>
     </>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

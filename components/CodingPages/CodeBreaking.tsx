@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PageTemplate } from "../Shared/PageTemplate";
+import { imgixLoader } from "../Shared/imgixLoader";
 
 export const CodeBreaking = () => {
   return (
@@ -18,7 +19,7 @@ export const CodeBreaking = () => {
     >
       <>
         <span>
-          {`This was a project I worked on to get accepted to the Linkedin REACH engineering apprenticeship program! To learn how I build it, please refer to the detailed `}
+          {`This was a project I worked on to get accepted to the LinkedIn REACH engineering apprenticeship program! To learn how I built it, please refer to the detailed `}
           <a
             target="_blank"
             className="text-blue-500 hover:text-blue-700"
@@ -27,7 +28,7 @@ export const CodeBreaking = () => {
           >
             readme
           </a>
-          {` on my github.`}
+          {` on my GitHub.`}
         </span>
         <span className="text-left">
           {`To play, please visit this link:`}{" "}
@@ -46,7 +47,7 @@ export const CodeBreaking = () => {
         <Image
           className="image" //why is this here?
           src={"/coding/mastermind/mastermindthumbnail2.png"}
-          loader={myLoader}
+          loader={imgixLoader}
           alt={"mastermind"}
           width={850}
           height={450}
@@ -55,14 +56,4 @@ export const CodeBreaking = () => {
       </>
     </PageTemplate>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

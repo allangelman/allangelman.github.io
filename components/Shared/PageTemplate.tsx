@@ -28,9 +28,9 @@ export const PageTemplate = ({
 }: PageTemplateProps) => {
   return (
     <div>
-      <div className="text-3xl flex flex-col font-extralight bg-slate-100 w-full h-full items-center space-y-4 py-4 pl-5">
+      <div className="text-3xl flex flex-col font-extralight bg-slate-100 w-full h-full items-center text-center space-y-4 py-4 px-5">
         <div>{title}</div>
-        <div className="space-x-2 items-center flex">
+        <div className="flex flex-wrap items-center justify-center gap-2">
           <>
             {tools.map((tool: string) => {
               return (

@@ -4,16 +4,7 @@ import Image from "next/image";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import styles from "../../styles/Home.module.css";
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
-};
+import { imgixLoader } from "./imgixLoader";
 
 interface ThumbnailProps {
   src: string;
@@ -49,7 +40,7 @@ export const Thumbnail = ({
           <div className="aspect-5/3 relative">
             <Image
               src={src}
-              loader={myLoader}
+              loader={imgixLoader}
               alt={alt}
               layout="fill"
               objectFit="cover"
@@ -60,12 +51,12 @@ export const Thumbnail = ({
           </div>
           <div className="w-full flex space-y-2 my-4 items-center justify-center text-black flex-col">
             <span className="text-lg font-bold text-center mx-2">{name}</span>
-            <div className="space-x-2 mx-2 flex flex-wrap items-center justify-center">
+            <div className="gap-2 mx-2 flex flex-wrap items-center justify-center">
               {tools.map((tool: string) => {
                 return (
                   <span
                     key={tool}
-                    className="text-slate-800 text-xs rounded bg-slate-300/50 p-2 mb-2"
+                    className="text-slate-800 text-xs rounded bg-slate-300/50 p-2"
                   >
                     {tool}
                   </span>
@@ -88,6 +79,7 @@ export const Thumbnail = ({
               "fixed top-1/2 left-1/2 transform bg-white overflow-y-scroll -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[55vw] h-[93vh] max-w-[90vw] md:max-w-[55vw] max-h-[93vh] outline-none rounded-lg"
             )}
           >
+            <Dialog.Title className="sr-only">{name}</Dialog.Title>
             {children}
             <Dialog.Close asChild>
               <button

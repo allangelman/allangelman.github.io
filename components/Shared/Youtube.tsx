@@ -1,8 +1,3 @@
-import * as Slider from "@radix-ui/react-slider";
-import Image from "next/image";
-import { useState } from "react";
-import cn from "classnames";
-
 interface YouTubeProps {
   videoID: string;
 }

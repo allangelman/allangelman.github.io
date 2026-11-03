@@ -25,13 +25,3 @@ export const VRProject = () => {
     </PageTemplate>
   );
 };
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
-};

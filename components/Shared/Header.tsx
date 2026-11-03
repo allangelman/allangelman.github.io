@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import * as Dialog from "@radix-ui/react-dialog";
 import styles from "../../styles/Home.module.css";
 import cn from "classnames";
@@ -13,7 +14,10 @@ export const Header = () => {
           <Link href={"/"}>ALLAN GELMAN</Link>
         </div>
 
-        <div className="flex flex-wrap justify-center space-x-4">
+        <nav
+          aria-label="Main"
+          className="flex flex-wrap justify-center gap-x-4"
+        >
           <HeaderCategory name={"CODE"} href={"/Coding"} />
           <HeaderCategory name={"3D"} href={"/ThreeDArt"} />
           <HeaderCategory name={"AR/VR"} href={"/AR"} />
@@ -41,6 +45,7 @@ export const Header = () => {
                     "fixed top-1/2 left-1/2 transform bg-white overflow-y-scroll -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[55vw] h-[93vh] max-w-[90vw] md:max-w-[55vw] max-h-[93vh] outline-none rounded-lg"
                   )}
                 >
+                  <Dialog.Title className="sr-only">About Allan Gelman</Dialog.Title>
                   <AboutContent />
                   <Dialog.Close asChild>
                     <button
@@ -54,7 +59,7 @@ export const Header = () => {
               </Dialog.Overlay>
             </Dialog.Portal>
           </Dialog.Root>
-        </div>
+        </nav>
       </div>
     </>
   );
@@ -62,15 +67,26 @@ export const Header = () => {
 
 interface HeaderCategoryProps {
   name: string;
-  href?: string;
+  href: string;
 }
 
 const HeaderCategory = ({ name, href }: HeaderCategoryProps) => {
+  const { pathname } = useRouter();
+  // The home page shows the coding projects, so treat "/" as CODE.
+  const isActive = pathname === href || (pathname === "/" && href === "/Coding");
+
   return (
-    <Link href={href ?? "/"}>
-      <div className="text-lg font-extralight whitespace-nowrap text-slate-900 hover:text-slate-500">
-        {name}
-      </div>
+    <Link
+      href={href}
+      aria-current={isActive ? "page" : undefined}
+      className={cn(
+        "text-lg whitespace-nowrap text-slate-900 hover:text-slate-500",
+        isActive
+          ? "font-normal underline decoration-1 underline-offset-8"
+          : "font-extralight"
+      )}
+    >
+      {name}
     </Link>
   );
 };

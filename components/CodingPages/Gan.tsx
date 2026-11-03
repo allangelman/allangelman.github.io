@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PageTemplate } from "../Shared/PageTemplate";
+import { imgixLoader } from "../Shared/imgixLoader";
 
 export const Gan = () => {
   return (
@@ -36,7 +37,7 @@ export const Gan = () => {
         <Image
           className="image"
           src={"/coding/ganxmlfixer/gan1.png"}
-          loader={myLoader}
+          loader={imgixLoader}
           alt={"gan"}
           width={850}
           height={450}
@@ -45,7 +46,7 @@ export const Gan = () => {
         <Image
           className="image"
           src={"/coding/ganxmlfixer/gan2.png"}
-          loader={myLoader}
+          loader={imgixLoader}
           alt={"gan"}
           width={850}
           height={450}
@@ -54,7 +55,7 @@ export const Gan = () => {
         <Image
           className="image"
           src={"/coding/ganxmlfixer/gan.png"}
-          loader={myLoader}
+          loader={imgixLoader}
           alt={"gan"}
           width={850}
           height={450}
@@ -63,14 +64,4 @@ export const Gan = () => {
       </>
     </PageTemplate>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

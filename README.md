@@ -1,48 +1,43 @@
-<!-- ## To Do
+# allangelman.github.io
 
-- coding projects content
-- immersive section content
+My personal portfolio: software projects, 3D art, AR/VR work, and digital paintings.
 
----
+**Live site:** https://allangelman.github.io
 
-- add preview hover for paintings
-- do a pass for image loading time
-- do a pass for image fading in (about page, sewing page, etc.)
-- fonts/colors
-- vimeo component style
-- image slider component stle
-- style for coding thumbnails
-- footer style
-- header style
-- do pass for adding links to concept art in 3d art section
-- do pass fix paragraph centering in 3d art section
-- make sure everything is responsive
-- add titles to 3d art section
-- add ability to open images larger in 3d art section
-- change gan xml thumbnail to not be white background
-- update mastermind project thumbnail to be more understandable and fix spacing at bottom
-- sewing page load time, decrease image file size
-- maybe make about section more like a mini resume, add list of skills, education, more bullets, less sentences
-- fade in for modals?
-- x bigger in modals?
-- maybe nothing needs to be its own page, but can rather be modal that slides in?
-- coding section should just have summaries and link to github mainly?
-- consistency for x button between pages and painting page
-- consistency with heading boldness/thinness
-- idea: make consistent thumnails across all sections. And make it look like the whole site is on one page, when you click on the headings, you stay on the same page but the thumbnails get swapped out to different ones with a cool css animation
-- readme for portoflio site
-- made my personal readme for my github
+## Stack
 
----
+- [Next.js](https://nextjs.org/) (static export) + React + TypeScript
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Radix UI](https://www.radix-ui.com/) primitives for accessible dialogs and sliders
+- Images are served from [imgix](https://imgix.com/), which resizes each image to the
+  rendered width and serves AVIF/WebP (see `components/Shared/imgixLoader.ts`)
+- Deployed to GitHub Pages by GitHub Actions on every push to `master`
 
-- add little tab icon
-- when finished, replace old website with new one on socials
-- create custom URL
+## Structure
 
----
+```
+pages/              one route per section (Coding, ThreeDArt, AR, Painting)
+components/
+  Shared/           Layout, Header, Footer, Thumbnail (card + project dialog), PageTemplate
+  CodingPages/      write-ups for each coding project
+  3DArtPages/       write-ups for each 3D art project
+  ARPages/          write-ups for each AR/VR project
+```
 
-- css animations/three.js for about page or header?
-- make thumbnail/renders for houdini lamp
-- make scene for mushroom project
-- create/add new ar project?
-- add three.js project? -->
+Each section is a grid of `Thumbnail` cards; clicking one opens a Radix dialog
+with that project's page.
+
+## Running locally
+
+Requires Node 18 or 20.
+
+```sh
+npm ci
+npm run dev        # http://localhost:3000
+```
+
+To build the same static site that is deployed:
+
+```sh
+npm run build && npm run export   # output in ./out
+```
