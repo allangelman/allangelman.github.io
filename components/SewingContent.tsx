@@ -9,16 +9,7 @@ import { Thumbnail } from "./Shared/Thumbnail";
 import { Grid } from "./Shared/Grid";
 import { FeltLikeHome } from "./FabricPages/FeltLikeHome";
 import { StitchedTogether } from "./FabricPages/StitchedTogether";
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
-};
+import { imgixLoader } from "./Shared/imgixLoader";
 
 export const SewingContent = () => {
   return (
@@ -98,7 +89,7 @@ export const Sewing = ({
             >
               <Image
                 src={src}
-                loader={myLoader}
+                loader={imgixLoader}
                 alt={alt}
                 width={800}
                 height={450}
@@ -121,7 +112,7 @@ export const Sewing = ({
           <Dialog.Content className="fixed top-1/2 left-1/2 transform flex -translate-x-1/2 -translate-y-1/2 w-[93vw] h-[93vw] max-w-[93vw] max-h-[93vh] outline-none overflow-y-scroll">
             <Image
               src={secondSrc ? secondSrc : src}
-              loader={myLoader}
+              loader={imgixLoader}
               alt={alt}
               fill
               onLoad={() => {

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PageTemplate } from "../Shared/PageTemplate";
+import { imgixLoader } from "../Shared/imgixLoader";
 
 export const CodeBreaking = () => {
   return (
@@ -46,7 +47,7 @@ export const CodeBreaking = () => {
         <Image
           className="image" //why is this here?
           src={"/coding/mastermind/mastermindthumbnail2.png"}
-          loader={myLoader}
+          loader={imgixLoader}
           alt={"mastermind"}
           width={850}
           height={450}
@@ -55,14 +56,4 @@ export const CodeBreaking = () => {
       </>
     </PageTemplate>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

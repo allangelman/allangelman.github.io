@@ -2,6 +2,7 @@ import * as Slider from "@radix-ui/react-slider";
 import Image from "next/image";
 import { useState } from "react";
 import cn from "classnames";
+import { imgixLoader } from "./imgixLoader";
 
 interface ImageLoaderProps {
   firstImagePath: string;
@@ -25,7 +26,7 @@ export const ImageSlider = ({
             width={850}
             height={450}
             style={{ objectFit: "cover" }}
-            loader={myLoader}
+            loader={imgixLoader}
           />
         </div>
         <div
@@ -38,7 +39,7 @@ export const ImageSlider = ({
             width={850}
             height={450}
             style={{ objectFit: "cover" }}
-            loader={myLoader}
+            loader={imgixLoader}
           />
         </div>
       </div>
@@ -66,14 +67,4 @@ export const ImageSlider = ({
       </div>
     </>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

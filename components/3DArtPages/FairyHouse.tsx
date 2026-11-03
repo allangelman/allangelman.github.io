@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { PageTemplate } from "../Shared/PageTemplate";
 import { Vimeo } from "../Shared/Vimeo";
+import { imgixLoader } from "../Shared/imgixLoader";
 
 export const FairyHouse = () => {
   return (
@@ -20,14 +21,14 @@ export const FairyHouse = () => {
               alt="final"
               width={500}
               height={450}
-              loader={myLoader}
+              loader={imgixLoader}
             />
             <Image
               src="/threeDArt/fairyhouse/concept.jpg"
               alt="final"
               width={500}
               height={450}
-              loader={myLoader}
+              loader={imgixLoader}
             />
           </div>
           <span>
@@ -51,14 +52,4 @@ export const FairyHouse = () => {
       </PageTemplate>
     </>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

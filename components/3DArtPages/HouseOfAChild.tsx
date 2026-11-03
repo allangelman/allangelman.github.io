@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ImageSlider } from "../Shared/ImageSlider";
 import { Vimeo } from "../Shared/Vimeo";
 import { PageTemplate } from "../Shared/PageTemplate";
+import { imgixLoader } from "../Shared/imgixLoader";
 
 export const HouseOfAChild = () => {
   return (
@@ -40,7 +41,7 @@ export const HouseOfAChild = () => {
             width={850}
             height={450}
             objectFit="cover"
-            loader={myLoader}
+            loader={imgixLoader}
           />
           <span>
             {`Here is a gif compilation of my test renders while I was working on this project!`}
@@ -55,14 +56,4 @@ export const HouseOfAChild = () => {
       </PageTemplate>
     </>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

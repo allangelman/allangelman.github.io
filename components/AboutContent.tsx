@@ -3,6 +3,7 @@ import Image from "next/image";
 import { PageTemplate } from "./Shared/PageTemplate";
 import cn from "classnames";
 import { useState } from "react";
+import { imgixLoader } from "./Shared/imgixLoader";
 
 export const AboutContent = () => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
@@ -34,7 +35,7 @@ export const AboutContent = () => {
               <Image
                 src={"/about/me.png"}
                 priority
-                loader={myLoader}
+                loader={imgixLoader}
                 alt={"Allan Gelman"}
                 width={1000}
                 height={1000}
@@ -83,14 +84,4 @@ export const AboutContent = () => {
       </PageTemplate>
     </>
   );
-};
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
 };

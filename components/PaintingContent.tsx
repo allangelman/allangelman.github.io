@@ -6,16 +6,7 @@ import { useState } from "react";
 import cn from "classnames";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import styles from "../styles/Home.module.css";
-
-interface imageLoaderProps {
-  src: string;
-  width: number;
-  quality?: number;
-}
-
-const myLoader = ({ src, width, quality }: imageLoaderProps): string => {
-  return `https://allan-gelman.imgix.net/${src}?w=${width}&auto=format&q=${quality || 75}`;
-};
+import { imgixLoader } from "./Shared/imgixLoader";
 
 export const PaintingContent = () => {
   return (
@@ -100,10 +91,11 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <div
+        <button
+          type="button"
           className={cn(
             styles.painting,
-            "mt-4 hover:scale-[1.01] relative group transition duration-300 outline-none border-none",
+            "block w-full mt-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-800 hover:scale-[1.01] relative group transition duration-300 border-none",
             {
               "opacity-100 transition duration-3000": imageIsLoaded,
               "opacity-0": !imageIsLoaded,
@@ -115,7 +107,7 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
             // transition: "0.3s",
           }}
         >
-          <div className="w-full h-10 bottom-0 font-extralight align-baseline absolute bg-transparent transition group-hover:bg-black/60 group-hover:text-white/80 text-transparent flex items-center pl-5">
+          <div className="w-full h-10 bottom-0 font-extralight align-baseline absolute bg-transparent transition group-hover:bg-black/60 group-hover:text-white/80 group-focus-visible:bg-black/60 group-focus-visible:text-white/80 text-transparent flex items-center pl-5">
             {label}
           </div>
           <div
@@ -126,7 +118,7 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
             <Image
               src={src}
               priority={priority}
-              loader={myLoader}
+              loader={imgixLoader}
               alt={alt}
               width={1200}
               height={500}
@@ -135,7 +127,7 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
               }}
             />
           </div>
-        </div>
+        </button>
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay
@@ -150,10 +142,10 @@ export const Painting = ({ src, alt, priority, label }: PainttingProps) => {
               "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[93vw] h-[93vw] max-w-[93vw] max-h-[93vh] outline-none rounded-lg"
             )}
           >
+            <Dialog.Title className="sr-only">{label}</Dialog.Title>
             <Image
-              className="image" //why is this here?
               src={src}
-              loader={myLoader}
+              loader={imgixLoader}
               alt={alt}
               fill
               onLoad={() => {
